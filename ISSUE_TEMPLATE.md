@@ -131,7 +131,8 @@ No
 
 ###### What changes were made since your SHIM was last signed?
 Shim rebased to upstream version shim-15.3
+Updated vendor_db certificates
 
 ###### What is the SHA256 hash of your final SHIM binary?
-<PLACE HOLDER FOR HASH>  shimia32.efi
-<PLACE HOLDER FOR HASH>  shimx64.efi
+e3256f5470baea73956a6d2c543c827af18c8e787916e5e3bd68c216f392ba73  shimx64.efi
+afe55596f9828992d27c802b79f1adaeddeae8083c03c47b8a8cccc9183fce0e  shimia32.efi

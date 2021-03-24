@@ -237,6 +237,7 @@ https://oss.oracle.com/ol7/shim/15.3-1.0.1.el7/shim-unsigned-x64-15.3-1.0.1.el7.
 What patches are being applied and why:
 -------------------------------------------------------------------------------
 Patch0001:      0001-Check-if-r-flag-is-supported-for-dos2unix.patch
+Check if -r flag is supported for dos2unix
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, GRUB2: is CVE-2020-14372, CVE-2020-25632,
