@@ -20,21 +20,25 @@ Here's the template:
 -------------------------------------------------------------------------------
 What organization or people are asking to have this signed:
 -------------------------------------------------------------------------------
+
 Oracle Corporation
 
 -------------------------------------------------------------------------------
 What product or service is this for:
 -------------------------------------------------------------------------------
+
 Oracle Linux https://www.oracle.com/linux/index.html
 
 -------------------------------------------------------------------------------
 What's the justification that this really does need to be signed for the whole world to be able to boot it:
 -------------------------------------------------------------------------------
+
 Oracle Linux is a popular enterprise Linux distribution with Secure Boot support.
 
 -------------------------------------------------------------------------------
 Who is the primary contact for security updates, etc.
 -------------------------------------------------------------------------------
+
 - Name: Ilya Okomin
 - Position: Security Team Principal Engineer
 - Email address: ilya.okomin@oracle.com
@@ -116,6 +120,7 @@ xlkoEG9YEfrktIEQHHBS92JTpWLQVeA4PUhtIDezuYnG6A==
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
+
 - Name: John Haxby
 - Position: Security Team Consulting Engineer
 - Email address: john.haxby@oracle.com
@@ -225,18 +230,22 @@ https://github.com/rhboot/shim/releases/download/15.3/shim-15.3.tar.bz2
 This matches https://github.com/rhboot/shim/releases/tag/15.3 and contains
 the appropriate gnu-efi source.
 -------------------------------------------------------------------------------
+
 Confirmed
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-https://oss.oracle.com/ol8/shim/15.3-1.0.1.el8/shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
+
+https://oss.oracle.com/ol8/shim/shim-15.3-1.0.1.el8/shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
 
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
-Patch0001:      0001-Check-if-r-flag-is-supported-for-dos2unix.patch
+
+Patch0001: 0001-Check-if-r-flag-is-supported-for-dos2unix.patch
+	- Check if -r flag is supported for dos2unix
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, GRUB2: is CVE-2020-14372, CVE-2020-25632,
@@ -244,13 +253,16 @@ If bootloader, shim loading is, GRUB2: is CVE-2020-14372, CVE-2020-25632,
  CVE-2020-10713, CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311,
  CVE-2020-15705, and if you are shipping the shim_lock module CVE-2021-3418
 -------------------------------------------------------------------------------
+
 Yes
 
 -------------------------------------------------------------------------------
 What exact implementation of Secureboot in GRUB2 ( if this is your bootloader ) you have ?
  Upstream grub2 shim_lock verifier or * Downstream RHEL/Fedora/Debian/Canonical like implementation ?
 -------------------------------------------------------------------------------
+
 Downstream RHEL/Fedora/Debian/Canonical like implementation
+
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, GRUB2, and previous shims were trusting affected
@@ -270,16 +282,19 @@ by CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
   ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
   grub2 builds ?
 -------------------------------------------------------------------------------
-* were old shims hashes provided to Microsoft for verification
+
+Were old shims hashes provided to Microsoft for verification
   and to be added to future DBX update ?
+
 Answer: Yes
 
-* Does your new chain of trust disallow booting old, affected by CVE-2020-14372,
+Does your new chain of trust disallow booting old, affected by CVE-2020-14372,
   CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
   CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
   CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705
   ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
   grub2 builds ?
+
 Answer: Affected grub2 signing cert removed from shim, new signing EV certificate introduced.
 New grub2 builds with CVE fix will be signed with new signing EV certificate.
 
@@ -290,7 +305,8 @@ upstream commit 1957a85b0032a81e6482ca4aab883643b8dae06e applied ?
 Is "ACPI: configfs: Disallow loading ACPI tables when locked down"
 upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 applied ?
 -------------------------------------------------------------------------------
-Oracle will sign kernels only with applied ACPI and efi patches.
+
+Oracle signs only kernels with applied ACPI and efi patches.
 
 
 -------------------------------------------------------------------------------
@@ -299,6 +315,7 @@ hashes please briefly describe your certificate setup. If there are allow-listed
 please provide exact binaries for which hashes are created via file sharing service,
 available in public with anonymous access for verification
 -------------------------------------------------------------------------------
+
 4 certificates enrolled in vendor_db:
 - EV cert to sign shim MokManager, fallback binaries and fwupd
 - EV cert to sign grub2
@@ -311,6 +328,7 @@ in order to prevent GRUB2 from being able to chainload those older GRUB2
 binaries. If you are changing to a new (CA) certificate, this does not
 apply. Please describe your strategy.
 --------------------------------------------------------------------------------
+
 Not applicable
 
 -------------------------------------------------------------------------------
@@ -321,6 +339,7 @@ At the very least include the specific versions of gcc, binutils, and gnu-efi wh
 and where to find those binaries.
 If possible, provide a Dockerfile that rebuilds the shim.
 -------------------------------------------------------------------------------
+
 Dockerfile to reproduce build is included.
 Oracle Linux images are available on docker hub.
 
@@ -329,6 +348,7 @@ Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build,
 creating the archives, etc.
 -------------------------------------------------------------------------------
+
 build.log
 
 -------------------------------------------------------------------------------
