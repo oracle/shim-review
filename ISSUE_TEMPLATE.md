@@ -132,5 +132,5 @@ No
 Shim rebased to upstream version shim-15.3
 
 ###### What is the SHA256 hash of your final SHIM binary?
-<PLACE HOLDER FOR HASH>  shimia32.efi
-<PLACE HOLDER FOR HASH>  shimx64.efi
+a3e392a05f0f90b3a349029b0824c0ab5f4e4919be3ff3e3fb3d558dc35e3a41  shimia32.efi
+a0908092ddb7d1416e58a1aacd614f9047730f28fae916f1deed3adbe970882e  shimx64.efi

@@ -1,7 +1,7 @@
 FROM oraclelinux:8.3
 
 RUN yum -y install wget rpm-build gcc gcc-c++ make yum-utils
-RUN wget https://oss.oracle.com/ol8/shim/15.3-1.0.1.el8/shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
+RUN wget https://oss.oracle.com/ol8/shim/shim-15.3-1.0.1.el8/shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
 RUN rpm -ivh shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
 RUN yum-builddep -y --enablerepo=* /root/rpmbuild/SPECS/shim-unsigned-x64.spec
 RUN rpmbuild -bb /root/rpmbuild/SPECS/shim-unsigned-x64.spec
