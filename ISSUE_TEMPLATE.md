@@ -82,12 +82,12 @@ grub.ol8,1,Oracle Linux 8,grub2,@@VERSION@@,mail:secalert_us@oracle.com
 shim Oracle Linux 7:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,1,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.ol7,1,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.ol,1,UEFI shim,shim,15.3,mail:secalert_us@oracle.com
 
 shim Oracle Linux 8:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,1,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.ol8,1,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.ol,1,UEFI shim,shim,15.3,mail:secalert_us@oracle.com
 
 All new UEFI binaries that are yet to be built with SBAT support will follow agreed SBAT variable pattern and we will add Oracle specific entry for them.
 
@@ -157,5 +157,5 @@ Updated vendor_db certificates
 
 ###### What is the SHA256 hash of your final SHIM binary?
 
-e3256f5470baea73956a6d2c543c827af18c8e787916e5e3bd68c216f392ba73  shimx64.efi
-afe55596f9828992d27c802b79f1adaeddeae8083c03c47b8a8cccc9183fce0e  shimia32.efi
+5b76d85f3fe12af65843fd133439a86911a2f2079f5dedcf6184e54900451c1d  shimia32.efi
+930de65625d6ea2c25ab23b649e4175ba6f3a101b98b3d9e11e586ea98e2397c  shimx64.efi
