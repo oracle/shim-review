@@ -237,15 +237,20 @@ Confirmed
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
 
-https://oss.oracle.com/ol8/shim/shim-15.3-1.0.1.el8/shim-unsigned-x64-15.3-1.0.1.el8.src.rpm
+https://oss.oracle.com/ol8/shim/shim-15.3-1.0.2.el8/shim-unsigned-x64-15.3-1.0.2.el8.src.rpm
 
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
 
+Oracle internal patch - Check if -r flag is supported for dos2unix:
 Patch0001: 0001-Check-if-r-flag-is-supported-for-dos2unix.patch
-	- Check if -r flag is supported for dos2unix
+
+Set of upstream patches to fix SBAT variable content validation:
+Patch0002: 0002-Move-the-check-for-the-SBAT-variable-properties-to-i.patch
+Patch0003: 0003-Fix-SBAT-variable-content-validation.patch
+Patch0004: 0004-Change-SBAT-variable-name-to-SbatLevel.patch
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, GRUB2: is CVE-2020-14372, CVE-2020-25632,
