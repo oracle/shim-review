@@ -205,7 +205,28 @@ Yes
 ### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim.
 ### Where your code is only slightly modified from an upstream vendor's, please also preserve their SBAT entries to simplify revocation.
 *******************************************************************************
-[your text here]
+shim:
+
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,3,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.ol,3,UEFI shim,shim,15.7,mail:secalert_us@oracle.com
+```
+
+grub2:
+
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,3,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
+grub.ol7,3,Oracle Linux 7,grub2,@@Version@@,mail:secalert_us@oracle.com
+```
+
+fwupd(template):
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,@@Version@@,https://github.com/fwupd/fwupd-efi
+fwupd-efi.ol,1,Oracle Linux,fwupd,@@Version@@,mail:secalert_us@oracle.com
+```
 
 *******************************************************************************
 ### Which modules are built into your signed grub image?

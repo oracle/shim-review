@@ -1,8 +1,7 @@
 FROM oraclelinux:7.9
 
 RUN yum -y install wget rpm-build gcc gcc-c++ make yum-utils
-RUN wget https://oss.oracle.com/ol7/shim/shim-15.7-1.0.1.el7/shim-15.7-1.0.1.el7.src.rpm
-#COPY shim-15.7-1.0.1.el7.src.rpm /
+COPY shim-15.7-1.0.1.el7.src.rpm /
 RUN rpm -ivh shim-15.7-1.0.1.el7.src.rpm
 RUN yum-builddep -y --enablerepo=ol7_optional_latest /root/rpmbuild/SPECS/shim.spec
 RUN yum -y update
