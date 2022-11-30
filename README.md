@@ -81,12 +81,12 @@ The shim-15.7.tar.bz2 is used as the original tarball.
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-[your url here]
+https://github.com/oracle/shim-review/raw/ol7-shim-x86_64-20221129/shim-15.7-1.0.1.el7.src.rpm
 
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-0001-Check-if-r-flag-is-supported-for-dos2unix.patch - add "-r" opt to D2UFLAGS in Make.defaults only if supported by OL7 DOS2UNIX version
+- 0001-Check-if-r-flag-is-supported-for-dos2unix.patch - add "-r" opt to D2UFLAGS in Make.defaults only if supported by OL7 DOS2UNIX version
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -272,11 +272,12 @@ No
 *******************************************************************************
 ### What kernel are you using? Which patches does it includes to enforce Secure Boot?
 *******************************************************************************
-4.1.12 based kernel with lockdown patches
-4.14.35 based kernel with lockdown patches
-5.4.17 based kernel with lockdown patches
-5.15.0 based kernel with lockdown patches
-3.10.0 based kernel with lockdown patches
+
+- 4.1.12 based kernel with lockdown patches
+- 4.14.35 based kernel with lockdown patches
+- 5.4.17 based kernel with lockdown patches
+- 5.15.0 based kernel with lockdown patches
+- 3.10.0 based kernel with lockdown patches
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim.
