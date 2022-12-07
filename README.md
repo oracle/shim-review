@@ -82,13 +82,13 @@ The shim-15.7.tar.bz2 is used as the original tarball.
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
 Source rpm provided in this review tag/branch:
-shim-unsigned-x64-15.7-1.0.1.el8.src.rpm
-shim-unsigned-aa64-15.7-1.0.1.el8.src.rpm
+shim-unsigned-x64-15.7-1.0.2.el8.src.rpm
+shim-unsigned-aa64-15.7-1.0.2.el8.src.rpm
 
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-Not applicable
+1000-Make-sbat_var.S-parse-right-with-buggy-gcc-binutils.patch - backport upstream commit 657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa to fix issue #533.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -181,6 +181,14 @@ Dockerfile files to reproduce build is included. Oracle Linux images are availab
 x86_64: Dockerfile
 aarch64: Dockerfile_aarch64
 
+
+Note: Running default shim build inside a container may lead to build issue with error "setarch: failed to set personality to linux32: Function not implemented"
+It can be workardounded adding "--security-opt=seccomp=unconfined" to the sample podman command:
+
+```
+$ podman build --security-opt=seccomp=unconfined -t ol8_shim15.7:shim-review .
+```
+
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
@@ -196,9 +204,9 @@ Rebased against 15.7
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 
-1d4b6ac96664e1208b8560070da66eb667f761f4fccb7b51c71b261f68bb1602  shimaa64.efi
-64fabff11435fdbf2f9e44a289e54968a839e96cd9732ad23a7171cb25f411ba  shimia32.efi
-acb60ad4122b28c78e502f6ec862932d8e319ba7680fd48a0bc261d3c4d1ad92  shimx64.efi
+80345f813a7e340f01f0c0a7c76006fe6182b8ccfb6e9ebc1a15fddbafa6e2c4  shimaa64.efi
+2cb9dd1261b83b19f9676be0096b5437bf4f4c167c8d798ff76f601b3417b5b9  shimia32.efi
+17c725bfd00bf596a5233b7d3c219b1bf3276f2bd39a0099721e5157d9855f03  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
