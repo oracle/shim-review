@@ -1,0 +1,2 @@
+%_topdir        /builddir/build/
+%_tmp           %{_topdir}/tmp

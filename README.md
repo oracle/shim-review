@@ -81,12 +81,13 @@ The shim-15.7.tar.bz2 is used as the original tarball.
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to get this binary:
 *******************************************************************************
-https://github.com/oracle/shim-review/raw/ol7-shim-x86_64-20221129/shim-15.7-1.0.1.el7.src.rpm
+https://github.com/oracle/shim-review/raw/ol7-shim-x86_64-20221129/shim-15.7-1.0.3.el7.src.rpm
 
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-- 0001-Check-if-r-flag-is-supported-for-dos2unix.patch - add "-r" opt to D2UFLAGS in Make.defaults only if supported by OL7 DOS2UNIX version
+- 1000-Check-if-r-flag-is-supported-for-dos2unix.patch - add "-r" opt to D2UFLAGS in Make.defaults only if supported by OL7 DOS2UNIX version
+- 1001-Make-sbat_var.S-parse-right-with-buggy-gcc-binutils.patch - backport upstream commit 657b2483ca6e9fcf2ad8ac7ee577ff546d24c3aa to fix issue #533.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -173,6 +174,13 @@ Not applicable
 *******************************************************************************
 Dockerfile to reproduce build is included. Oracle Linux images are available on docker hub and container-registry.oracle.com.
 
+Note: Running default shim build inside a container may lead to build issue with error "setarch: failed to set personality to linux32: Function not implemented"
+It can be workardounded adding "--security-opt=seccomp=unconfined" to the sample podman command:
+
+```
+$ podman build --security-opt=seccomp=unconfined -t ol7_shim15.7:shim-review .
+```
+
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
@@ -187,8 +195,9 @@ Rebased against 15.7
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-c5e9999cfbc727813b9bb782cc46207cfd5116ae35033159d1f7d75e429f40b3  shimia32.efi
-d75eb0d696b7dacd0b9718e6c2090382aba66ef350497d1571386ec650e4d5cf  shimx64.efi
+
+77f0e3bdc92445004e15d2364e867e36212fe2c1bdcb8c913577473a454bc013  shimia32.efi
+e218b9de5fd6038a53fcecead8d9dbf2121003aab5ae7a89ff3ad3387d8ad1ff  shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
