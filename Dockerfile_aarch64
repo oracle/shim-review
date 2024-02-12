@@ -1,0 +1,16 @@
+FROM oraclelinux:9
+
+RUN yum -y install wget rpm-build gcc gcc-c++ make yum-utils
+COPY shim-unsigned-aarch64-15.8-1.0.2.el9.src.rpm /
+RUN rpm -ivh shim-unsigned-aarch64-15.8-1.0.2.el9.src.rpm
+RUN yum-builddep -y --enablerepo=ol9_appstream,ol9_baseos_latest /root/rpmbuild/SPECS/shim-unsigned-aarch64.spec
+RUN rpmbuild -bb /root/rpmbuild/SPECS/shim-unsigned-aarch64.spec
+COPY shimaa64.efi /
+RUN ls -l /
+RUN ls -l /root/rpmbuild/RPMS/aarch64
+RUN rpm2cpio /root/rpmbuild/RPMS/aarch64/shim-unsigned-aarch64-15.8-1.0.2.el9.aarch64.rpm  | cpio -idmv
+RUN hexdump -Cv ./usr/share/shim/15.8-1.0.2.el9/aa64/shimaa64.efi > built-aa64.hex
+RUN hexdump -Cv /shimaa64.efi > orig-aa64.hex
+RUN sha256sum /usr/share/shim/15.8-1.0.2.el9/aa64/shimaa64.efi /shimaa64.efi
+RUN diff -u orig-aa64.hex built-aa64.hex
+RUN objdump -h /usr/share/shim/15.8-1.0.2.el9/aa64/shimaa64.efi
