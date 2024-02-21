@@ -275,7 +275,7 @@ grub2:
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,3,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
-grub.ol8,3,Oracle Linux 8,grub2,@@Version@@,mail:secalert_us@oracle.com
+grub.ol8,3,Oracle Linux 8,grub2,2.02,mail:secalert_us@oracle.com
 ```
 
 fwupd:
