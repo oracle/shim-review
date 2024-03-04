@@ -280,6 +280,13 @@ fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd-
 fwupd-efi.ol,1,Oracle Linux,fwupd,1.7.8,mail:secalert_us@oracle.com
 ```
 
+kernel-uki-virt:
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+systemd,1,The systemd Developers,systemd,252,https://systemd.io/
+systemd.ol,1,Oracle Linux Server,systemd,252-14.0.1.el9_2.3,https://github.com/oracle/oracle-linux
+```
+
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
 *******************************************************************************
