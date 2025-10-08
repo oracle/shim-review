@@ -22,8 +22,7 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-Organization name and website:  
-[your text here]
+Oracle Corporation
 
 *******************************************************************************
 ### What's the legal data that proves the organization's genuineness?
@@ -33,7 +32,10 @@ Provide the information, which can prove the genuineness with certainty.
 Company/tax register entries or equivalent:  
 (a link to the organization entry in your jurisdiction's register will do)  
 
-[your text here]
+www.oracle.com
+
+Official and well-known company website reference should prove Oracle Corporation genuinity for reviewers.
+
 
 The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.  
 (**not** the CA certificate embedded in your shim binary)
@@ -45,22 +47,26 @@ Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
 Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
 ```
 
-[your text here]
+EV certificate data:
+```
+Issuer: C=US, O=DigiCert, Inc., CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+Subject: C=US, ST=California, L=Redwood City, O=Oracle America, Inc., CN=Oracle America, Inc.
+```
 
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-[your text here]
+Oracle Linux https://www.oracle.com/linux/index.html
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-[your text here]
+Oracle Linux is a popular enterprise Linux distribution with Secure Boot support.
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+Oracle Linux is a big OS vendor with custom GRUB2 patches and support program.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -69,10 +75,12 @@ The security contacts need to be verified before the shim can be accepted. For s
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: Ilya Okomin
+- Position: Oracle Linux Senior Software Development Manager, Security Assurance
+- Email address: ilya.okomin@oracle.com
+- PGP key fingerprint: AC2E 0425 F0E5 0625 F0EE  8376 CC4F 721D 5B96 2F83
+
+https://github.com/oracle/shim-review/raw/main/iokomin.pub
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -81,10 +89,12 @@ well known in the Linux community.)
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
 *******************************************************************************
-- Name:
-- Position:
-- Email address:
-- PGP key fingerprint:
+- Name: John Haxby
+- Position: Oracle Linux Software Architect, Kernel and Security
+- Email address: john.haxby@oracle.com
+- PGP key fingerprint: FEA7 1BDB D750 8559 490D  48E5 450B BB7E 942F A3C8
+
+https://github.com/oracle/shim-review/raw/main/jhaxby.pub
 
 (Key should be signed by the other security contacts, pushed to a keyserver
 like keyserver.ubuntu.com, and preferably have signatures that are reasonably
@@ -122,7 +132,7 @@ authentic, please confirm this here with a simple *yes*.
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
@@ -130,26 +140,28 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-[your url here]
+Source RPM provided in this review branch as part of https://github.com/oracle/shim-review.git project :
+shim-unsigned-x64-16.1-1.0.2.el9.src.rpm
+shim-unsigned-aarch64-16.1-2.0.2.el9.src.rpm
 
 *******************************************************************************
 ### What patches are being applied and why:
 Mention all the external patches and build process modifications, which are used during your building process, that make your shim binary be the exact one that you posted as part of this application.
 *******************************************************************************
-[your text here]
+NA
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-[your text here]
+NX bit is not set
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 Skip this, if you're not using GRUB2.
 *******************************************************************************
-[your text here]
+Downstream RHEL/Fedora/Debian/Canonical like implementation
 
 *******************************************************************************
 ### Do you have fixes for all the following GRUB2 CVEs applied?
@@ -194,21 +206,24 @@ Skip this, if you're not using GRUB2.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-[your text here]
+The signed bootloaders are derived from GRUB2 2.06 with all of the relevant patches except CVE-2023-4692 and CVE-2023-4693, as we are not including NTFS modules into Oracle signed grub EFI images.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-[your text here]
+It is `grub,3` in the latest public released Oracle Linux 9.6 GRUB2 errata version 2.06-104.0.1.
+Because we are not building NTFS modules ( which are affected by last CVE ) into Oracle signed grub EFI binary.
+
+In the upcoming Oracle Linux 9.7 release GRUB2 will be updated to newer version with recent security fixes, SBAT entry will be bumped to `grub,5`.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 If you had no previous signed shim, say so here. Otherwise a simple _yes_ will do.
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### If your boot chain of trust includes a Linux kernel:
@@ -218,31 +233,43 @@ If you had no previous signed shim, say so here. Otherwise a simple _yes_ will d
 Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
-[your text here]
+All Oracle Linux kernels which are signed for SecureBoot have patches above applied.
 
 *******************************************************************************
 ### How does your signed kernel enforce lockdown when your system runs
 ### with Secure Boot enabled?
 Hint: If it does not, we are not likely to sign your shim.
 *******************************************************************************
-[your text here]
+Within the kernel, if it is booted with EFI Secure boot enabled, we force lockdown into integrity mode
+
+```
+if (efi_enabled(EFI_SECURE_BOOT))
+		security_lock_kernel_down("EFI Secure Boot mode", LOCKDOWN_INTEGRITY_MAX);
+```
 
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-[your text here]
+Oracle Linux actively backports features and bugfixes.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
 ### If not, please describe how you ensure that one kernel build does not load modules built for another kernel.
 *******************************************************************************
-[your text here]
+Yes, build time generated ephemeral key.
 
 *******************************************************************************
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
-[your text here]
+3 Digiert EV certificates enrolled in vendor_db:
+- EV cert to sign shim MokManager, fallback binaries and fwupd
+- EV cert to sign grub2
+- EV cert to sign kernel
+Additional Oracle Linux SecureBoot CA enrolled in vendor_db to validate signatures done after March/April 2025
+
+vendor_db on aarch64 has signing certificate for kernel different from x86_64 distribution.
+vendor_db and vendor_db_aarch64 ESL files as well as X509 certificates provided in the review branch/tag
 
 *******************************************************************************
 ### If you are re-using the CA certificate from your last shim binary, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs mentioned earlier to vendor_dbx in shim. Please describe your strategy.
@@ -250,7 +277,7 @@ This ensures that your new shim+GRUB2 can no longer chainload those older GRUB2 
 
 If this is your first application or you're using a new CA certificate, please say so here.
 *******************************************************************************
-[your text here]
+Not applicable, GRUB2 revocation is implemented via SBAT metadata.
 
 *******************************************************************************
 ### Is the Dockerfile in your repository the recipe for reproducing the building of your shim binary?
@@ -260,13 +287,19 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-[your text here]
+Dockerfile files to reproduce build is included. Oracle Linux images are available on docker hub and container-registry.oracle.com.
+x86_64: Dockerfile
+aarch64: Dockerfile_aarch64
+
+```
+$ podman build --security-opt=seccomp=unconfined -t ol9_shim16.1:shim-review .
+```
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-[your text here]
+.log files
 
 *******************************************************************************
 ### What changes were made in the distro's secure boot chain since your SHIM was last signed?
@@ -274,24 +307,30 @@ For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA
 
 Skip this, if this is your first application for having shim signed.
 *******************************************************************************
-[your text here]
+Comparing to previous submission, this change updates shim to v16.1, no other changes.
+
 
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-[your text here]
+```
+6c5e6f091665f65ef12df8718d301ed3e9a69333d2b00ff83af45287abae8b42  shimaa64.efi
+06b8e88be43b90e070317eae8e3dac2180ffa1aa3d3028cff5a920e38d958b9b  shimx64.efi
+```
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-[your text here]
+EV Certificates with private keys stored in HSM.
+
+Private Oracle Linux SecureBoot CA and signing certificates for signing Oracle Linux boot chain components after March 2025 have private keys stored in HSM.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
 A _yes_ or _no_ will do. There's no penalty for the latter.
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### Are you embedding a CA certificate in your shim?
@@ -300,7 +339,7 @@ if _yes_: does that certificate include the X509v3 Basic Constraints
 to say that it is a CA? See the [docs](./docs/) for more guidance
 about this.
 *******************************************************************************
-[your text here]
+Yes
 
 *******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
@@ -313,7 +352,31 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-[your text here]
+shim:
+
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.ol,3,UEFI shim,shim,16.1,mail:secalert_us@oracle.com
+```
+
+
+grub2:
+Output below matches latest public OL9 GRUB2 errata version 2.06-104.0.1, upcoming Oracle Linux 9.7 update will include GRUB2 version with all patches for SBAT v5 level.
+
+```
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,3,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.06-104.0.1.el9_6,mailto:secalert@redhat.com
+grub.ol9,3,Oracle Linux,grub2,2.06,mail:secalert_us@oracle.com
+```
+
+fwupd:
+```
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
+fwupd-efi.ol,1,Oracle Linux,fwupd,1.9.26,mail:secalert_us@oracle.com
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -321,45 +384,62 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-[your text here]
+efi_netfs efifwsetup efinet lsefi
+lsefimmap connectefi backtrace chain
+usb usbserial_common usbserial_pl2303
+usbserial_ftdi usbserial_usbdebug keylayouts
+at_keyboard
+all_video boot blscfg btrfs
+cat configfile cryptodisk echo ext2
+fat font gcry_rijndael gcry_rsa gcry_serpent
+gcry_sha256 gcry_twofish gcry_whirlpool
+gfxmenu gfxterm gzio halt hfsplus http
+increment iso9660 jpeg loadenv loopback linux
+lvm luks mdraid09 mdraid1x minicmd multiboot2 net
+normal part_apple part_msdos part_gpt
+password_pbkdf2 png reboot regexp search
+search_fs_uuid search_fs_file search_label
+serial sleep syslinuxcfg test tftp video xfs
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
 *******************************************************************************
-[your text here]
+No, Oracle Linux does not use systemd-boot.
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-[your text here]
+GRUB2 2.06-104.0.1.el9_6 based on latest available in public RHEL GRUB2 + Oracle customization patches on top
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-[your text here]
+shim also launches fwupd
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-[your text here]
+GRUB2 verifies signatures on booted kernels via shim, all the other expected components are both verified by secureboot signatures and SBAT verification
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
 *******************************************************************************
-[your text here]
+No
 
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+- 5.14.0 based kernel with lockdown patches
+- 5.15.0 based kernel with lockdown patches
+- 6.12.0 based kernel with lockdown patches
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
@@ -369,9 +449,9 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-[your text here]
+Oracle shim maintainers regularly participate in peer-reviews helping other applicants getting reviews ready. 
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
-[your text here]
+No

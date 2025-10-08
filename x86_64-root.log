@@ -1,0 +1,1185 @@
+INFO buildroot.py:497:  Mock Version: 2.16
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG buildroot.py:681:  kernel version == 5.15.0-308.179.6.el9uek.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/log/yum.log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/yum_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/dnf_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.vxq1glwm', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG buildroot.py:201:  rootdir = /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG buildroot.py:202:  resultdir = result/x86_64
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/pki/mock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf
+DEBUG package_manager.py:588:  configure DNF vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/usermod', '-u', '1039', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:446:  usermod: no changes
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/.initialized
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+INFO buildroot.py:497:  Mock Version: 2.16
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG buildroot.py:681:  kernel version == 5.15.0-308.179.6.el9uek.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/log/yum.log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/yum_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/dnf_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.yt0vkhrp', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG buildroot.py:201:  rootdir = /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG buildroot.py:202:  resultdir = result/x86_64
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/pki/mock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf
+DEBUG package_manager.py:588:  configure DNF vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/usermod', '-u', '1039', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:446:  usermod: no changes
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/.initialized
+INFO backend.py:391:  Running in chroot: ['rpm', '--rebuilddb']
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['rpm', '--rebuilddb'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+INFO buildroot.py:497:  Mock Version: 2.16
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG buildroot.py:681:  kernel version == 5.15.0-308.179.6.el9uek.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/log/yum.log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/yum_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/ol9-x86_64-u7/dnf_cache', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.4jev0ubo', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG buildroot.py:201:  rootdir = /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root
+DEBUG buildroot.py:202:  resultdir = result/x86_64
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/pki/mock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc/dnf
+DEBUG package_manager.py:588:  configure DNF vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/etc
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/userdel', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '1039', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:444:  useradd: warning: the home directory /builddir already exists.
+DEBUG util.py:444:  useradd: Not copying any file from skel directory into it.
+DEBUG util.py:444:  Creating mailbox file: File exists
+DEBUG util.py:597:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/RPMS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/RPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/SPECS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/SPECS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/SRPMS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/SRPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/SOURCES
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/BUILD
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/BUILD
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/BUILDROOT
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/BUILDROOT
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/originals
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir/build/originals
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/builddir
+DEBUG file_util.py:30:  touching file: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/.initialized
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-unsigned-x64-16.1-1.0.2.el9.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:446:  Updating / installing...
+DEBUG util.py:446:  shim-unsigned-x64-16.1-1.0.2.el9      ########################################
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-unsigned-x64-16.1-1.0.2.el9.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell False
+DEBUG util.py:446:  sbat.oracle.csv
+DEBUG util.py:446:  shim-16.1.tar.bz2
+DEBUG util.py:446:  shim-find-debuginfo.sh
+DEBUG util.py:446:  shim-unsigned-x64.spec
+DEBUG util.py:446:  shim.patches
+DEBUG util.py:446:  vendordb.esl
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/installation-homedir
+DEBUG package_manager.py:197:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root//builddir/build/SRPMS/shim-unsigned-x64-16.1-1.0.2.el9.src.rpm']
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root//builddir/build/SRPMS/shim-unsigned-x64-16.1-1.0.2.el9.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:446:  public_baseos                                   105 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_baseos                                   123 MB/s |  88 MB     00:00    
+DEBUG util.py:446:  public_u6                                       108 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_u5                                       187 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_u4                                       165 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_u3                                       177 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_u2                                       186 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_u1                                       156 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_ga                                       167 kB/s | 4.2 kB     00:00    
+DEBUG util.py:446:  public_appstream                                167 kB/s | 4.5 kB     00:00    
+DEBUG util.py:446:  public_appstream                                130 MB/s |  70 MB     00:00    
+DEBUG util.py:446:  public_codeready                                128 kB/s | 3.8 kB     00:00    
+DEBUG util.py:446:  public_codeready                                3.3 MB/s |  15 MB     00:04    
+DEBUG util.py:446:  public_distrobuilder                            127 kB/s | 3.8 kB     00:00    
+DEBUG util.py:446:  u7-builddeps                                     23 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u6-builddeps                                    145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u5-builddeps                                    146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u4-builddeps                                    146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u3-builddeps                                    133 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u2-builddeps                                    139 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  groups                                          132 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u7                                              145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u7-extras                                       145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u7-extras.0                                     145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u7-distro_builder                               141 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u6                                              150 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u6                                              115 MB/s | 110 MB     00:00    
+DEBUG util.py:446:  u6-extras                                        18 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u6-extras.0                                     143 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u6-distro_builder                               132 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u5                                              143 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u5-extras                                       146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u5-extras.0                                     132 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u5-distro_builder                               142 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u4                                              147 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u4-extras                                       151 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u4-extras.0                                     146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u4-distro_builder                               145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u3                                              142 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u3-extras                                       149 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u3-extras.0                                     140 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u3-distro_builder                               145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u2                                              149 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u2-extras                                       146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u2-extras.0                                     149 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u2-distro_builder                               147 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u1                                              143 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u1-extras                                       152 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u1-extras.0                                     146 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u1-builddeps                                    144 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u0                                              152 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u0-extras                                       150 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u0-extras.0                                     145 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  u0-builddeps                                    147 kB/s | 3.0 kB     00:00    
+DEBUG util.py:446:  Package findutils-1:4.8.0-7.el9.x86_64 is already installed.
+DEBUG util.py:446:  Package gcc-11.5.0-11.0.1.el9.x86_64 is already installed.
+DEBUG util.py:446:  Package make-1:4.3-8.el9.x86_64 is already installed.
+DEBUG util.py:446:  Package openssl-1:3.5.1-3.0.1.el9.x86_64 is already installed.
+DEBUG util.py:446:  Dependencies resolved.
+DEBUG util.py:446:  ======================================================================================
+DEBUG util.py:446:   Package                   Arch    Version                     Repository         Size
+DEBUG util.py:446:  ======================================================================================
+DEBUG util.py:446:  Installing:
+DEBUG util.py:446:   dos2unix                  x86_64  7.4.2-4.el9                 public_baseos     273 k
+DEBUG util.py:446:   elfutils-libelf-devel     x86_64  0.193-1.el9                 u7                 74 k
+DEBUG util.py:446:   git                       x86_64  2.47.3-1.el9_6              public_appstream   65 k
+DEBUG util.py:446:   openssl-devel             x86_64  1:3.5.1-3.0.1.el9           u7                4.2 M
+DEBUG util.py:446:   pesign                    x86_64  115-6.0.2.el9               public_appstream  198 k
+DEBUG util.py:446:  Installing dependencies:
+DEBUG util.py:446:   crypto-policies-scripts   noarch  20250905-1.git377cc42.el9_7 u7                162 k
+DEBUG util.py:446:   efivar-libs               x86_64  38-3.el9                    public_baseos     120 k
+DEBUG util.py:446:   emacs-filesystem          noarch  1:27.2-18.el9               u7                8.1 k
+DEBUG util.py:446:   git-core                  x86_64  2.47.3-1.el9_6              public_appstream  4.7 M
+DEBUG util.py:446:   git-core-doc              noarch  2.47.3-1.el9_6              public_appstream  4.1 M
+DEBUG util.py:446:   less                      x86_64  590-6.el9                   u7                175 k
+DEBUG util.py:446:   libcbor                   x86_64  0.7.0-5.el9                 public_baseos      57 k
+DEBUG util.py:446:   libfido2                  x86_64  1.13.0-2.el9                public_baseos     102 k
+DEBUG util.py:446:   libzstd-devel             x86_64  1.5.5-1.el9                 public_appstream   54 k
+DEBUG util.py:446:   nspr                      x86_64  4.36.0-4.el9_4              public_appstream  137 k
+DEBUG util.py:446:   nss                       x86_64  3.112.0-4.el9_4             public_appstream  733 k
+DEBUG util.py:446:   nss-softokn               x86_64  3.112.0-4.el9_4             public_appstream  405 k
+DEBUG util.py:446:   nss-softokn-freebl        x86_64  3.112.0-4.el9_4             public_appstream  421 k
+DEBUG util.py:446:   nss-sysinit               x86_64  3.112.0-4.el9_4             public_appstream   18 k
+DEBUG util.py:446:   nss-tools                 x86_64  3.112.0-4.el9_4             public_appstream  468 k
+DEBUG util.py:446:   nss-util                  x86_64  3.112.0-4.el9_4             public_appstream   88 k
+DEBUG util.py:446:   openssh                   x86_64  8.7p1-46.0.2.el9            u7                480 k
+DEBUG util.py:446:   openssh-clients           x86_64  8.7p1-46.0.2.el9            u7                731 k
+DEBUG util.py:446:   perl-Error                noarch  1:0.17029-7.el9             public_appstream   57 k
+DEBUG util.py:446:   perl-Git                  noarch  2.47.3-1.el9_6              public_appstream   42 k
+DEBUG util.py:446:   zlib-devel                x86_64  1.2.11-40.el9               public_appstream   51 k
+DEBUG util.py:446:  Transaction Summary
+DEBUG util.py:446:  ======================================================================================
+DEBUG util.py:446:  Install  26 Packages
+DEBUG util.py:446:  Total download size: 18 M
+DEBUG util.py:446:  Installed size: 58 M
+DEBUG util.py:446:  Downloading Packages:
+DEBUG util.py:446:  (1/26): libcbor-0.7.0-5.el9.x86_64.rpm          910 kB/s |  57 kB     00:00    
+DEBUG util.py:446:  (2/26): efivar-libs-38-3.el9.x86_64.rpm         1.7 MB/s | 120 kB     00:00    
+DEBUG util.py:446:  (3/26): dos2unix-7.4.2-4.el9.x86_64.rpm         3.7 MB/s | 273 kB     00:00    
+DEBUG util.py:446:  (4/26): libfido2-1.13.0-2.el9.x86_64.rpm        8.1 MB/s | 102 kB     00:00    
+DEBUG util.py:446:  (5/26): git-core-2.47.3-1.el9_6.x86_64.rpm       44 MB/s | 4.7 MB     00:00    
+DEBUG util.py:446:  (6/26): git-core-doc-2.47.3-1.el9_6.noarch.rpm   33 MB/s | 4.1 MB     00:00    
+DEBUG util.py:446:  (7/26): git-2.47.3-1.el9_6.x86_64.rpm           431 kB/s |  65 kB     00:00    
+DEBUG util.py:446:  (8/26): libzstd-devel-1.5.5-1.el9.x86_64.rpm    1.2 MB/s |  54 kB     00:00    
+DEBUG util.py:446:  (9/26): nspr-4.36.0-4.el9_4.x86_64.rpm          2.9 MB/s | 137 kB     00:00    
+DEBUG util.py:446:  (10/26): nss-3.112.0-4.el9_4.x86_64.rpm          14 MB/s | 733 kB     00:00    
+DEBUG util.py:446:  (11/26): nss-softokn-freebl-3.112.0-4.el9_4.x86 7.7 MB/s | 421 kB     00:00    
+DEBUG util.py:446:  (12/26): nss-softokn-3.112.0-4.el9_4.x86_64.rpm 5.0 MB/s | 405 kB     00:00    
+DEBUG util.py:446:  (13/26): nss-sysinit-3.112.0-4.el9_4.x86_64.rpm 249 kB/s |  18 kB     00:00    
+DEBUG util.py:446:  (14/26): nss-tools-3.112.0-4.el9_4.x86_64.rpm   9.1 MB/s | 468 kB     00:00    
+DEBUG util.py:446:  (15/26): perl-Error-0.17029-7.el9.noarch.rpm    6.0 MB/s |  57 kB     00:00    
+DEBUG util.py:446:  (16/26): pesign-115-6.0.2.el9.x86_64.rpm         10 MB/s | 198 kB     00:00    
+DEBUG util.py:446:  (17/26): zlib-devel-1.2.11-40.el9.x86_64.rpm    4.1 MB/s |  51 kB     00:00    
+DEBUG util.py:446:  (18/26): perl-Git-2.47.3-1.el9_6.noarch.rpm     810 kB/s |  42 kB     00:00    
+DEBUG util.py:446:  (19/26): nss-util-3.112.0-4.el9_4.x86_64.rpm    765 kB/s |  88 kB     00:00    
+DEBUG util.py:446:  (20/26): elfutils-libelf-devel-0.193-1.el9.x86_ 2.2 MB/s |  74 kB     00:00    
+DEBUG util.py:446:  (21/26): crypto-policies-scripts-20250905-1.git 2.8 MB/s | 162 kB     00:00    
+DEBUG util.py:446:  (22/26): emacs-filesystem-27.2-18.el9.noarch.rp 354 kB/s | 8.1 kB     00:00    
+DEBUG util.py:446:  (23/26): less-590-6.el9.x86_64.rpm               18 MB/s | 175 kB     00:00    
+DEBUG util.py:446:  (24/26): openssh-8.7p1-46.0.2.el9.x86_64.rpm     35 MB/s | 480 kB     00:00    
+DEBUG util.py:446:  (25/26): openssh-clients-8.7p1-46.0.2.el9.x86_6  38 MB/s | 731 kB     00:00    
+DEBUG util.py:446:  (26/26): openssl-devel-3.5.1-3.0.1.el9.x86_64.r  92 MB/s | 4.2 MB     00:00    
+DEBUG util.py:446:  --------------------------------------------------------------------------------
+DEBUG util.py:446:  Total                                            35 MB/s |  18 MB     00:00     
+DEBUG util.py:446:  Running transaction check
+DEBUG util.py:446:  Transaction check succeeded.
+DEBUG util.py:446:  Running transaction test
+DEBUG util.py:446:  Transaction test succeeded.
+DEBUG util.py:446:  Running transaction
+DEBUG util.py:446:    Preparing        :                                                        1/1 
+DEBUG util.py:446:    Installing       : nspr-4.36.0-4.el9_4.x86_64                            1/26 
+DEBUG util.py:446:    Installing       : nss-util-3.112.0-4.el9_4.x86_64                       2/26 
+DEBUG util.py:446:    Installing       : nss-softokn-freebl-3.112.0-4.el9_4.x86_64             3/26 
+DEBUG util.py:446:    Installing       : nss-softokn-3.112.0-4.el9_4.x86_64                    4/26 
+DEBUG util.py:446:    Running scriptlet: openssh-8.7p1-46.0.2.el9.x86_64                       5/26 
+DEBUG util.py:446:    Installing       : openssh-8.7p1-46.0.2.el9.x86_64                       5/26 
+DEBUG util.py:446:    Installing       : less-590-6.el9.x86_64                                 6/26 
+DEBUG util.py:446:    Installing       : emacs-filesystem-1:27.2-18.el9.noarch                 7/26 
+DEBUG util.py:446:    Installing       : crypto-policies-scripts-20250905-1.git377cc42.el9_    8/26 
+DEBUG util.py:446:    Installing       : nss-3.112.0-4.el9_4.x86_64                            9/26 
+DEBUG util.py:446:    Running scriptlet: nss-3.112.0-4.el9_4.x86_64                            9/26 
+DEBUG util.py:446:    Installing       : nss-sysinit-3.112.0-4.el9_4.x86_64                   10/26 
+DEBUG util.py:446:    Installing       : nss-tools-3.112.0-4.el9_4.x86_64                     11/26 
+DEBUG util.py:446:    Installing       : zlib-devel-1.2.11-40.el9.x86_64                      12/26 
+DEBUG util.py:446:    Installing       : perl-Error-1:0.17029-7.el9.noarch                    13/26 
+DEBUG util.py:446:    Installing       : libzstd-devel-1.5.5-1.el9.x86_64                     14/26 
+DEBUG util.py:446:    Installing       : libcbor-0.7.0-5.el9.x86_64                           15/26 
+DEBUG util.py:446:    Installing       : libfido2-1.13.0-2.el9.x86_64                         16/26 
+DEBUG util.py:446:    Installing       : openssh-clients-8.7p1-46.0.2.el9.x86_64              17/26 
+DEBUG util.py:446:    Running scriptlet: openssh-clients-8.7p1-46.0.2.el9.x86_64              17/26 
+DEBUG util.py:446:    Installing       : git-core-2.47.3-1.el9_6.x86_64                       18/26 
+DEBUG util.py:446:    Installing       : git-core-doc-2.47.3-1.el9_6.noarch                   19/26 
+DEBUG util.py:446:    Installing       : perl-Git-2.47.3-1.el9_6.noarch                       20/26 
+DEBUG util.py:446:    Installing       : git-2.47.3-1.el9_6.x86_64                            21/26 
+DEBUG util.py:446:    Installing       : efivar-libs-38-3.el9.x86_64                          22/26 
+DEBUG util.py:446:    Running scriptlet: pesign-115-6.0.2.el9.x86_64                          23/26 
+DEBUG util.py:446:    Installing       : pesign-115-6.0.2.el9.x86_64                          23/26 
+DEBUG util.py:446:    Running scriptlet: pesign-115-6.0.2.el9.x86_64                          23/26 
+DEBUG util.py:446:    Installing       : elfutils-libelf-devel-0.193-1.el9.x86_64             24/26 
+DEBUG util.py:446:    Installing       : openssl-devel-1:3.5.1-3.0.1.el9.x86_64               25/26 
+DEBUG util.py:446:    Installing       : dos2unix-7.4.2-4.el9.x86_64                          26/26 
+DEBUG util.py:446:    Running scriptlet: crypto-policies-scripts-20250905-1.git377cc42.el9_   26/26 
+DEBUG util.py:446:    Running scriptlet: nss-3.112.0-4.el9_4.x86_64                           26/26 
+DEBUG util.py:446:    Running scriptlet: pesign-115-6.0.2.el9.x86_64                          26/26 
+DEBUG util.py:446:    Running scriptlet: dos2unix-7.4.2-4.el9.x86_64                          26/26 
+DEBUG util.py:446:    Verifying        : dos2unix-7.4.2-4.el9.x86_64                           1/26 
+DEBUG util.py:446:    Verifying        : efivar-libs-38-3.el9.x86_64                           2/26 
+DEBUG util.py:446:    Verifying        : libcbor-0.7.0-5.el9.x86_64                            3/26 
+DEBUG util.py:446:    Verifying        : libfido2-1.13.0-2.el9.x86_64                          4/26 
+DEBUG util.py:446:    Verifying        : git-2.47.3-1.el9_6.x86_64                             5/26 
+DEBUG util.py:446:    Verifying        : git-core-2.47.3-1.el9_6.x86_64                        6/26 
+DEBUG util.py:446:    Verifying        : git-core-doc-2.47.3-1.el9_6.noarch                    7/26 
+DEBUG util.py:446:    Verifying        : libzstd-devel-1.5.5-1.el9.x86_64                      8/26 
+DEBUG util.py:446:    Verifying        : nspr-4.36.0-4.el9_4.x86_64                            9/26 
+DEBUG util.py:446:    Verifying        : nss-3.112.0-4.el9_4.x86_64                           10/26 
+DEBUG util.py:446:    Verifying        : nss-softokn-3.112.0-4.el9_4.x86_64                   11/26 
+DEBUG util.py:446:    Verifying        : nss-softokn-freebl-3.112.0-4.el9_4.x86_64            12/26 
+DEBUG util.py:446:    Verifying        : nss-sysinit-3.112.0-4.el9_4.x86_64                   13/26 
+DEBUG util.py:446:    Verifying        : nss-tools-3.112.0-4.el9_4.x86_64                     14/26 
+DEBUG util.py:446:    Verifying        : nss-util-3.112.0-4.el9_4.x86_64                      15/26 
+DEBUG util.py:446:    Verifying        : perl-Error-1:0.17029-7.el9.noarch                    16/26 
+DEBUG util.py:446:    Verifying        : perl-Git-2.47.3-1.el9_6.noarch                       17/26 
+DEBUG util.py:446:    Verifying        : pesign-115-6.0.2.el9.x86_64                          18/26 
+DEBUG util.py:446:    Verifying        : zlib-devel-1.2.11-40.el9.x86_64                      19/26 
+DEBUG util.py:446:    Verifying        : crypto-policies-scripts-20250905-1.git377cc42.el9_   20/26 
+DEBUG util.py:446:    Verifying        : elfutils-libelf-devel-0.193-1.el9.x86_64             21/26 
+DEBUG util.py:446:    Verifying        : emacs-filesystem-1:27.2-18.el9.noarch                22/26 
+DEBUG util.py:446:    Verifying        : less-590-6.el9.x86_64                                23/26 
+DEBUG util.py:446:    Verifying        : openssh-8.7p1-46.0.2.el9.x86_64                      24/26 
+DEBUG util.py:446:    Verifying        : openssh-clients-8.7p1-46.0.2.el9.x86_64              25/26 
+DEBUG util.py:446:    Verifying        : openssl-devel-1:3.5.1-3.0.1.el9.x86_64               26/26 
+DEBUG util.py:446:  Installed:
+DEBUG util.py:446:    crypto-policies-scripts-20250905-1.git377cc42.el9_7.noarch                    
+DEBUG util.py:446:    dos2unix-7.4.2-4.el9.x86_64                                                   
+DEBUG util.py:446:    efivar-libs-38-3.el9.x86_64                                                   
+DEBUG util.py:446:    elfutils-libelf-devel-0.193-1.el9.x86_64                                      
+DEBUG util.py:446:    emacs-filesystem-1:27.2-18.el9.noarch                                         
+DEBUG util.py:446:    git-2.47.3-1.el9_6.x86_64                                                     
+DEBUG util.py:446:    git-core-2.47.3-1.el9_6.x86_64                                                
+DEBUG util.py:446:    git-core-doc-2.47.3-1.el9_6.noarch                                            
+DEBUG util.py:446:    less-590-6.el9.x86_64                                                         
+DEBUG util.py:446:    libcbor-0.7.0-5.el9.x86_64                                                    
+DEBUG util.py:446:    libfido2-1.13.0-2.el9.x86_64                                                  
+DEBUG util.py:446:    libzstd-devel-1.5.5-1.el9.x86_64                                              
+DEBUG util.py:446:    nspr-4.36.0-4.el9_4.x86_64                                                    
+DEBUG util.py:446:    nss-3.112.0-4.el9_4.x86_64                                                    
+DEBUG util.py:446:    nss-softokn-3.112.0-4.el9_4.x86_64                                            
+DEBUG util.py:446:    nss-softokn-freebl-3.112.0-4.el9_4.x86_64                                     
+DEBUG util.py:446:    nss-sysinit-3.112.0-4.el9_4.x86_64                                            
+DEBUG util.py:446:    nss-tools-3.112.0-4.el9_4.x86_64                                              
+DEBUG util.py:446:    nss-util-3.112.0-4.el9_4.x86_64                                               
+DEBUG util.py:446:    openssh-8.7p1-46.0.2.el9.x86_64                                               
+DEBUG util.py:446:    openssh-clients-8.7p1-46.0.2.el9.x86_64                                       
+DEBUG util.py:446:    openssl-devel-1:3.5.1-3.0.1.el9.x86_64                                        
+DEBUG util.py:446:    perl-Error-1:0.17029-7.el9.noarch                                             
+DEBUG util.py:446:    perl-Git-2.47.3-1.el9_6.noarch                                                
+DEBUG util.py:446:    pesign-115-6.0.2.el9.x86_64                                                   
+DEBUG util.py:446:    zlib-devel-1.2.11-40.el9.x86_64                                               
+DEBUG util.py:446:  Complete!
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: rpm -qa --root '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'no_proxy': 'us.oracle.com,.oraclecorp.com'} and shell True
+DEBUG util.py:446:  tzdata-2025b-2.el9.noarch 1757709538 1903601 d67dffde4ed079607a39f2dd13907585 installed
+DEBUG util.py:446:  redhat-release-3:9.6-0.1.0.1.el9.x86_64 1747218853 7555 8ba9f827e43c903754a83feecfde2d27 installed
+DEBUG util.py:446:  python3-setuptools-wheel-53.0.0-15.el9.noarch 1754615367 562657 bdbb728d40688bb775328774bb34c21d installed
+DEBUG util.py:446:  ncurses-base-6.2-12.20210508.el9.noarch 1754638084 307293 b6b5348184236079979101e059e27de2 installed
+DEBUG util.py:446:  ncurses-libs-6.2-12.20210508.el9.x86_64 1754638084 994383 7349863c162d88081fdf86ef783c625f installed
+DEBUG util.py:446:  oraclelinux-release-9:9.7-1.0.1.el9.x86_64 1754500037 10155873 98aaf384ea08dd70a4c18517cb90cffd installed
+DEBUG util.py:446:  setup-2.13.7-10.el9.noarch 1712269448 725932 e5f29e787f69bd5a6335beb7577c9828 installed
+DEBUG util.py:446:  filesystem-3.16-5.el9.x86_64 1729922950 106 ae1dad465b8bda7f025b696caf87c29c installed
+DEBUG util.py:446:  basesystem-11-13.el9.noarch 1641673755 0 bd44ab3f602558b79c66fa6a5629696b installed
+DEBUG util.py:446:  bash-5.1.8-9.el9.x86_64 1714543138 7738770 c6dc9dec3d1b2ae51b674814591a2d40 installed
+DEBUG util.py:446:  libgcc-11.5.0-11.0.1.el9.x86_64 1757398589 207020 7eeff503eadbf0d8f7cd6dbe15392af6 installed
+DEBUG util.py:446:  glibc-gconv-extra-2.34-231.0.1.el9.x86_64 1758791089 8122564 030221b2d774381449bc3122bc3e8059 installed
+DEBUG util.py:446:  glibc-minimal-langpack-2.34-231.0.1.el9.x86_64 1758791089 0 5963766e506e1d69d1795e2fe8d8349c installed
+DEBUG util.py:446:  glibc-common-2.34-231.0.1.el9.x86_64 1758791089 1081358 566b1ddee21c85f66f7a656fb14f106b installed
+DEBUG util.py:446:  glibc-2.34-231.0.1.el9.x86_64 1758791089 6461315 c267d13a6f23bf2a43ee918be4f0abf0 installed
+DEBUG util.py:446:  zlib-1.2.11-40.el9.x86_64 1697248718 202937 88571b9a20da7efdff98440f04c8b54d installed
+DEBUG util.py:446:  bzip2-libs-1.0.8-10.el9_5.x86_64 1738647301 78236 d157a7316f1468eccd659802367f8077 installed
+DEBUG util.py:446:  libzstd-1.5.5-1.el9.x86_64 1740042086 773750 bb7cd1caf1be1c7923a58f67c4498d89 installed
+DEBUG util.py:446:  xz-libs-5.2.5-8.el9_0.x86_64 1655247966 181581 2d4900250fb2050d9ebe037373aabd75 installed
+DEBUG util.py:446:  libstdc++-11.5.0-11.0.1.el9.x86_64 1757398589 2585657 282b38135d8efe0a34db57579d70f614 installed
+DEBUG util.py:446:  libxcrypt-4.4.18-3.el9.x86_64 1641669389 270692 e1de29a6c04c3e6b8199511da841bfd1 installed
+DEBUG util.py:446:  gmp-1:6.2.0-13.el9.x86_64 1697248402 816836 af7df4deeda13c9886e459bc82e712b8 installed
+DEBUG util.py:446:  libcap-2.48-10.el9.x86_64 1754643978 177447 785c773056b0fbea3bbb09a8f682140b installed
+DEBUG util.py:446:  elfutils-libelf-0.193-1.el9.x86_64 1754477574 1220296 b0bbac60f3970828314caa86fa170112 installed
+DEBUG util.py:446:  sqlite-libs-3.34.1-8.el9_6.x86_64 1753731213 1310800 1e521f2646c4f962751d4ece4059b72f installed
+DEBUG util.py:446:  mpfr-4.1.0-7.el9.x86_64 1641712971 802539 275a127a412d38fcb3519bc5db9c114b installed
+DEBUG util.py:446:  libuuid-2.37.4-21.0.1.el9.x86_64 1741607853 38005 6ecc601fe8d8edcfbcfe7eae2c383cf0 installed
+DEBUG util.py:446:  popt-1.18-8.el9.x86_64 1641777603 130360 93454bfe750952b0b0c53c4f8b9f4437 installed
+DEBUG util.py:446:  libxml2-2.9.13-12.el9_6.x86_64 1754581137 1955236 b08d01bb7c8fb85113f8515bdc656e04 installed
+DEBUG util.py:446:  gdbm-libs-1:1.23-1.el9.x86_64 1729884209 128586 541163aeff5d6cde7a8d189713c00750 installed
+DEBUG util.py:446:  libattr-2.5.1-3.el9.x86_64 1641672425 29429 840aba89e4726d0a86cac9a49d955cc0 installed
+DEBUG util.py:446:  libacl-2.3.1-4.el9.x86_64 1712626942 40674 663694fb8c88c3fbef1c1d0194ce2c98 installed
+DEBUG util.py:446:  libgpg-error-1.42-5.el9.x86_64 1651775898 837056 d34cc2e61a9811ab630446dad587722d installed
+DEBUG util.py:446:  readline-8.1-4.el9.x86_64 1641812561 492844 abf2e33cc94fdaaddd5d3bf4c16afba2 installed
+DEBUG util.py:446:  libffi-3.4.2-8.el9.x86_64 1697301987 65761 f32cd451d2d679a8d1039f2cd747de08 installed
+DEBUG util.py:446:  libsmartcols-2.37.4-21.0.1.el9.x86_64 1741607853 134787 d6f63e7efb370c7e12c9dc40e4a1881a installed
+DEBUG util.py:446:  lua-libs-5.4.4-4.el9.x86_64 1697251602 287331 5b628deeac0d25b5cb0e002aae1355db installed
+DEBUG util.py:446:  lz4-libs-1.9.3-5.el9.x86_64 1641698029 145483 476adc4311cf349a1ed35b88ba106049 installed
+DEBUG util.py:446:  crypto-policies-20250905-1.git377cc42.el9_7.noarch 1759515480 101000 a024ce77e589187fc5e8fe71409438b9 installed
+DEBUG util.py:446:  libgcrypt-1.10.0-11.el9.x86_64 1729953681 1398394 d6191289edd6605587aedd8f81649952 installed
+DEBUG util.py:446:  libmpc-1.2.1-4.el9.x86_64 1641731268 138613 10fa25295d61e6c151c0a67737fc051c installed
+DEBUG util.py:446:  unzip-6.0-59.0.1.el9.x86_64 1755092407 398531 2781c12837a0346fbd68761eeae69a02 installed
+DEBUG util.py:446:  file-libs-5.39-16.el9.x86_64 1712631206 8086740 4a6e194af442f5387af237bcb0073147 installed
+DEBUG util.py:446:  expat-2.5.0-5.el9_6.x86_64 1747438265 309138 a2378675fe16e1bf2109dc2a7353863d installed
+DEBUG util.py:446:  json-c-0.14-11.el9.x86_64 1651696338 79034 49a35315976434d99cf2d68118cf88e6 installed
+DEBUG util.py:446:  keyutils-libs-1.6.3-1.el9.x86_64 1680251128 55267 99e4888654ff4e888dd4506c037a91db installed
+DEBUG util.py:446:  libcap-ng-0.8.2-7.el9.x86_64 1651906428 75196 524ad25fdf658d01d42c6d2480d1d08b installed
+DEBUG util.py:446:  audit-libs-3.1.5-7.0.1.el9.x86_64 1755080963 338513 704a75464572a207922f48d3290028cf installed
+DEBUG util.py:446:  libtasn1-4.16.0-9.el9.x86_64 1741483910 183364 b647a949488e21d38b3d79d4498b5104 installed
+DEBUG util.py:446:  p11-kit-0.25.3-3.el9_5.x86_64 1734955102 2530763 cae463528b5cefb6c1e4e4bd88cc9925 installed
+DEBUG util.py:446:  libunistring-0.9.10-15.el9.x86_64 1641660073 1643051 5c49283077f0c6baaea79feb6c49df03 installed
+DEBUG util.py:446:  libidn2-2.3.0-7.el9.x86_64 1641712809 253460 a5c00bb90ae2f4a7988452ede14a8c69 installed
+DEBUG util.py:446:  make-1:4.3-8.el9.x86_64 1712652897 1719870 82b165412eff3552020c2b955f9dc295 installed
+DEBUG util.py:446:  libcom_err-1.46.5-8.el9.x86_64 1754648151 68401 761a9f9d2ba1c0a43b43d689397cd23a installed
+DEBUG util.py:446:  file-5.39-16.el9.x86_64 1712631206 102728 245e9eb0aab49d879ab3416db899839c installed
+DEBUG util.py:446:  libassuan-2.5.5-3.el9.x86_64 1641685014 171165 f52410f2ad65420cc85df03c0f6bd939 installed
+DEBUG util.py:446:  dwz-0.16-1.el9.x86_64 1754632379 293364 832c7641d4726dbb86206182a4f380e0 installed
+DEBUG util.py:446:  bzip2-1.0.8-10.el9_5.x86_64 1738647301 95088 3723595696d1d225773791ba59d393a7 installed
+DEBUG util.py:446:  alternatives-1.24-2.0.1.el9.x86_64 1741618277 63304 25813078e3647eb7560666463464b62c installed
+DEBUG util.py:446:  p11-kit-trust-0.25.3-3.el9_5.x86_64 1734955102 478116 14b005d6ad06d271cecbacc8e1d5cc6e installed
+DEBUG util.py:446:  cpio-2.13-16.el9.x86_64 1651695666 1088179 5c50046031e9a753be5c2a8b5915964b installed
+DEBUG util.py:446:  diffutils-3.7-12.el9.x86_64 1641776716 1467825 07aa3222591de2644f87a6c9859d874e installed
+DEBUG util.py:446:  libdb-5.3.28-57.0.1.el9_6.x86_64 1750775079 1897926 5843622c84338ac1d93a4209726fb4de installed
+DEBUG util.py:446:  libsigsegv-2.13-4.el9.x86_64 1641834927 50338 1780aacf16c67eed706caef46b7612d2 installed
+DEBUG util.py:446:  pcre-8.44-4.el9.x86_64 1729887226 537720 512fe2440da716aa9a13b092b94a5d0f installed
+DEBUG util.py:446:  grep-3.6-5.el9.x86_64 1641841685 857840 790f814fed0117ab16c083ffe2f7a000 installed
+DEBUG util.py:446:  xz-5.2.5-8.el9_0.x86_64 1655247966 685939 22ba122c38102eda8c1f730fdfdfed08 installed
+DEBUG util.py:446:  libgomp-11.5.0-11.0.1.el9.x86_64 1757398589 421709 33d561ce493ef4969b2f60dbc323a36b installed
+DEBUG util.py:446:  libsepol-3.6-3.el9.x86_64 1754527347 829187 206f289e746c021850fb147b73b684e3 installed
+DEBUG util.py:446:  keyutils-1.6.3-1.el9.x86_64 1680251128 161876 3ef3e8d314d88a03383eb7bfa38a8c76 installed
+DEBUG util.py:446:  libcomps-0.1.18-1.el9.x86_64 1651719070 215087 7a72b908b9c4b3f26c695e1e70e311be installed
+DEBUG util.py:446:  zip-3.0-35.el9.x86_64 1680377694 741151 2b290de5da9ba5b33a7e324e5dde337e installed
+DEBUG util.py:446:  cpp-11.5.0-11.0.1.el9.x86_64 1757398589 30719366 9ea46862fe3ed81e5789a45ca651e4c8 installed
+DEBUG util.py:446:  zstd-1.5.5-1.el9.x86_64 1740042086 1672437 df0cf8b2178f5f1fdcf194da11925d2c installed
+DEBUG util.py:446:  libksba-1.5.1-7.el9.x86_64 1729949952 394486 8ed473e86dbd534d5c993bb18ba91130 installed
+DEBUG util.py:446:  acl-2.3.1-4.el9.x86_64 1712626942 212719 02ba70f13d1fb84278adfa94964b0405 installed
+DEBUG util.py:446:  attr-2.5.1-3.el9.x86_64 1641672425 166237 d296e597fec20c3feaa09f3c86835a81 installed
+DEBUG util.py:446:  libxcrypt-compat-4.4.18-3.el9.x86_64 1641669389 202824 729e5ead9a5e0cf99b11b5a055b63998 installed
+DEBUG util.py:446:  groff-base-1.22.4-10.el9.x86_64 1651710723 4040446 1c7483c74d614e0b810951d92ed7509d installed
+DEBUG util.py:446:  libstdc++-devel-11.5.0-11.0.1.el9.x86_64 1757398589 13578480 9e55a7541d6705fb710aa564f68ae173 installed
+DEBUG util.py:446:  info-6.7-15.el9.x86_64 1651929781 508027 86d764d312fbc7325b30c0f147008170 installed
+DEBUG util.py:446:  ed-1.14.2-12.el9.x86_64 1641782434 129923 bec126efcf6d27f90adaa569f0874403 installed
+DEBUG util.py:446:  libbrotli-1.0.9-7.el9_5.x86_64 1734955881 782506 86835dfe5694490b3b754cc046e5b4c4 installed
+DEBUG util.py:446:  libeconf-0.4.1-4.el9.x86_64 1729886089 45803 ebcd029ea3dc518969560ae9c1f46e9c installed
+DEBUG util.py:446:  libedit-3.1-38.20210216cvs.el9.x86_64 1697301239 251831 13a381a23b160ce81fd8af5428d3bf96 installed
+DEBUG util.py:446:  libnghttp2-1.43.0-6.el9.x86_64 1729885333 169892 12cb735903d398e85463497f5dc02fef installed
+DEBUG util.py:446:  libpkgconf-1.7.3-10.el9.x86_64 1680244610 75417 03964547d7ed479c6307c6943c68fc13 installed
+DEBUG util.py:446:  pkgconf-1.7.3-10.el9.x86_64 1680244610 77890 5992ff3fa506ad5e6a22c5b61b38d68c installed
+DEBUG util.py:446:  libseccomp-2.5.2-2.el9.x86_64 1651730041 175261 f33832bd22c443010e9ee9b9718df1a7 installed
+DEBUG util.py:446:  libtool-ltdl-2.4.6-46.el9.x86_64 1729909389 71568 02703622566138daceff8cb9d44b07c5 installed
+DEBUG util.py:446:  libverto-0.3.2-3.el9.x86_64 1641662645 30365 c1e236699e2ec8f4a8452675e0d051f6 installed
+DEBUG util.py:446:  libyaml-0.2.5-7.el9.x86_64 1641682670 138283 3512e324a89600187b4f00c083fcfd24 installed
+DEBUG util.py:446:  nettle-3.10.1-1.el9.x86_64 1741469818 1169552 7f754b24ddabefc26917d26d754b2ec1 installed
+DEBUG util.py:446:  gnutls-3.8.3-9.el9.x86_64 1757712904 3456693 4dfc0867b982b7c84dfcc74de6fdd1bd installed
+DEBUG util.py:446:  npth-1.6-8.el9.x86_64 1641727120 50619 8c2159313708c0589a198f2c4e64723f installed
+DEBUG util.py:446:  which-2.21-30.el9_6.x86_64 1754383727 81900 fc104b405b38c18e1449bfd697fedb2f installed
+DEBUG util.py:446:  libdatrie-0.2.13-4.el9.x86_64 1641692821 59521 928d20373700246035dcbacbb0156923 installed
+DEBUG util.py:446:  libthai-0.1.28-8.el9.x86_64 1641847450 778570 de0602cb2d4338e7b6e94d640c478915 installed
+DEBUG util.py:446:  sombok-2.4.0-16.el9.x86_64 1641828827 139196 88d7a05e2f95c41e5656c5c4bc98c6a0 installed
+DEBUG util.py:446:  fips-provider-next-1.2.0-5.0.1.el9.x86_64 1755766853 6352825 e10026ffc1d2a120bfe883daa2b0ccda installed
+DEBUG util.py:446:  glibc-headers-2.34-231.0.1.el9.x86_64 1758791089 2181490 c5fc60f0d367c908695827a3a4349d86 installed
+DEBUG util.py:446:  ncurses-6.2-12.20210508.el9.x86_64 1754638084 624684 74ba0022db71a78b44ab051c73dac591 installed
+DEBUG util.py:446:  systemd-rpm-macros-252-55.0.1.el9.noarch 1758023887 10405 a59c9aab6bb80a2617d537f715c1e429 installed
+DEBUG util.py:446:  llvm-filesystem-20.1.8-3.el9.x86_64 1757693038 0 68e43dbc5d5f737e57ac945b87813e18 installed
+DEBUG util.py:446:  llvm-libs-20.1.8-3.el9.x86_64 1757693038 129141071 f69d160be7f79269e46536684b041be3 installed
+DEBUG util.py:446:  kernel-headers-5.14.0-611.2.1.el9_7.x86_64 1759483509 6542300 c78d1e2b2066cc355cf5070e464a7529 installed
+DEBUG util.py:446:  buildsys-macros-9-0.0.1.el9.x86_64 1636236551 155 63dd70de3170b64f57f02bd3f5317ea4 installed
+DEBUG util.py:446:  rust-srpm-macros-17-4.el9.noarch 1641843103 2447 ca038b2cb34331e7e8a015ae5f1b0f6f installed
+DEBUG util.py:446:  qt5-srpm-macros-5.15.9-1.el9.noarch 1697353854 492 695b383f418fd88ccea6691ffe9c5ebb installed
+DEBUG util.py:446:  perl-srpm-macros-1-41.el9.noarch 1641779160 862 46365c7a0b38de0d865b84e0270d8b4a installed
+DEBUG util.py:446:  openblas-srpm-macros-2-11.el9.noarch 1641733793 104 d0697321e16177f840b87686df851da3 installed
+DEBUG util.py:446:  ocaml-srpm-macros-6-6.el9.noarch 1641728787 745 d69dc9f77889831c256eb7242c71d6dc installed
+DEBUG util.py:446:  ghc-srpm-macros-1.5.0-6.el9.noarch 1641699454 535 98789a4e732cd37b6a187371dbad27db installed
+DEBUG util.py:446:  gawk-all-langpacks-5.1.0-6.el9.x86_64 1651919466 1205149 acfb350ea83196106427a07ac23e6ed7 installed
+DEBUG util.py:446:  gawk-5.1.0-6.el9.x86_64 1651919466 1685662 a706a098823c50761bdc6377a6db9b3b installed
+DEBUG util.py:446:  publicsuffix-list-dafsa-20210518-3.el9.noarch 1651887579 68815 c0d9de23a1d86d66c1ea85dfdb7b2ead installed
+DEBUG util.py:446:  libpsl-0.21.1-5.el9.x86_64 1641805114 78600 2672d3c87080d524fb5c5b61340a582e installed
+DEBUG util.py:446:  pkgconf-m4-1.7.3-10.el9.noarch 1680244610 14187 8d3c2304415b2ac800426967460abfab installed
+DEBUG util.py:446:  pkgconf-pkg-config-1.7.3-10.el9.x86_64 1680244610 1203 74342a8e7202726c5b0b7cf613189089 installed
+DEBUG util.py:446:  glibc-devel-2.34-231.0.1.el9.x86_64 1758791089 50392 f2b9991bd65d91c0f29a585a6cff01a9 installed
+DEBUG util.py:446:  libxcrypt-devel-4.4.18-3.el9.x86_64 1641669389 31019 38802d46f6a74e4084a2fad7c8bf163c installed
+DEBUG util.py:446:  pcre2-syntax-10.40-6.0.1.el9.noarch 1730247233 234324 e3486ac1108aa181fbb6e6a5d3a8b870 installed
+DEBUG util.py:446:  pcre2-10.40-6.0.1.el9.x86_64 1730247233 652298 c56c3935400eaae7ad11102ea204e27c installed
+DEBUG util.py:446:  libselinux-3.6-3.el9.x86_64 1740159518 176733 668ea53bf31ee8c11ac9e4b74140de34 installed
+DEBUG util.py:446:  sed-4.8-9.el9.x86_64 1641838588 813599 c59ea3e4dbbbdfb1b360aefe5ddb9b7d installed
+DEBUG util.py:446:  findutils-1:4.8.0-7.el9.x86_64 1729928800 1756958 db4b913a8a300886b330b69f8a3fba3f installed
+DEBUG util.py:446:  tar-2:1.34-7.el9.x86_64 1729980866 3155439 7685f9eb86535010b9184dac6740db46 installed
+DEBUG util.py:446:  patch-2.7.6-16.el9.x86_64 1641753148 265522 1ef0514a94589e8465ece8a5fd449415 installed
+DEBUG util.py:446:  libsemanage-3.6-5.el9_6.x86_64 1744331364 307182 f8b297395a55fd66031d1bfb938ca7db installed
+DEBUG util.py:446:  shadow-utils-2:4.9-15.el9.x86_64 1757705242 3812562 0e569dc26762d09b6ec187fb15244670 installed
+DEBUG util.py:446:  libutempter-1.2.1-6.el9.x86_64 1641660684 59417 83773cd53fef62d117f7fdcfece5f294 installed
+DEBUG util.py:446:  libssh-config-0.10.4-13.el9.noarch 1712646950 277 cabe2ade3d3b968ad47d3829119b7113 installed
+DEBUG util.py:446:  libreport-filesystem-2.15.2-6.0.3.el9.noarch 1655332346 0 9a5145bd55cff27234530fb10a9f139c installed
+DEBUG util.py:446:  dnf-data-4.14.0-31.0.1.el9.noarch 1755082377 40111 c96a852ef66fef54dff4c9f41d486b68 installed
+DEBUG util.py:446:  coreutils-common-8.32-39.0.1.el9.x86_64 1740140753 10880590 ac38c2a12b4e9860eabf30c9b8ca0cce installed
+DEBUG util.py:446:  openssl-libs-1:3.5.1-3.0.1.el9.x86_64 1755178623 7470531 7cb750377bc9a33ba32b9077df17cb79 installed
+DEBUG util.py:446:  coreutils-8.32-39.0.1.el9.x86_64 1740140753 5966770 1658b549a22ebc8420e43900067c2e41 installed
+DEBUG util.py:446:  ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch 1724251299 2698659 859bdff9c8f89c3827a43a0337043108 installed
+DEBUG util.py:446:  libblkid-2.37.4-21.0.1.el9.x86_64 1741607853 229729 9a87d3191c50e71ed2856f2d86b8cb11 installed
+DEBUG util.py:446:  systemd-libs-252-55.0.1.el9.x86_64 1758023887 1827104 f32d68413d19061423b8297fdf6c1da3 installed
+DEBUG util.py:446:  libmount-2.37.4-21.0.1.el9.x86_64 1741607853 318325 6e553c5e0fcbd4d6d21024ea524d38c8 installed
+DEBUG util.py:446:  glib2-2.68.4-16.el9_6.2.x86_64 1752587958 13443486 6b8178f37f1f929dfd191e7a1c96b4d2 installed
+DEBUG util.py:446:  gzip-1.12-1.el9.x86_64 1664677381 377005 f9751948507cc6df13b1af0c43288a36 installed
+DEBUG util.py:446:  krb5-libs-1.21.1-8.0.1.el9_6.x86_64 1750756780 2503241 c70f9fe516054e522e06f718ca259819 installed
+DEBUG util.py:446:  cracklib-2.9.6-27.el9.x86_64 1641735169 251850 f9db95d5061d9dd7b6d611bceed889aa installed
+DEBUG util.py:446:  libfdisk-2.37.4-21.0.1.el9.x86_64 1741607853 367771 ab5a198290b2b82ba1fb9ec5e2f8ebfa installed
+DEBUG util.py:446:  libarchive-3.5.3-6.el9_6.x86_64 1755675539 906150 aabb27d411141c25deb4e9c51ff3546a installed
+DEBUG util.py:446:  cracklib-dicts-2.9.6-27.el9.x86_64 1641735169 9815154 542e2d59378717dff39b8108206b88f0 installed
+DEBUG util.py:446:  libssh-0.10.4-13.el9.x86_64 1712646950 535867 2a50e8a9c521c6465cf91c4177df0426 installed
+DEBUG util.py:446:  cyrus-sasl-lib-2.1.27-22.el9.x86_64 1754527889 2380472 46a9a0950d1bd9fa8824d065cb1c3961 installed
+DEBUG util.py:446:  util-linux-core-2.37.4-21.0.1.el9.x86_64 1741607853 1262855 9d6af24386a14293317c2ce7a7d23217 installed
+DEBUG util.py:446:  dbus-libs-1:1.12.20-8.0.1.el9.x86_64 1698156934 372982 cdf9b8f327175e71eff506a755bc7f78 installed
+DEBUG util.py:446:  python3-pip-wheel-21.3.1-1.el9.noarch 1729882569 1232785 c8627f196b882f2365616c4e69cadbbb installed
+DEBUG util.py:446:  python-unversioned-command-3.9.23-2.0.1.el9.noarch 1757928532 23 9604b7c9bc2d1189329d40660ef3466b installed
+DEBUG util.py:446:  python3-3.9.23-2.0.1.el9.x86_64 1757928532 32836 0752b5403ffbba23563f6f394d21150b installed
+DEBUG util.py:446:  python3-libs-3.9.23-2.0.1.el9.x86_64 1757928532 33076368 34a0dee930b062890baff7b92eabf261 installed
+DEBUG util.py:446:  python3-libcomps-0.1.18-1.el9.x86_64 1651719070 147098 8f80cbd9d5b3a6683a6a835c814d6aca installed
+DEBUG util.py:446:  python3-pyparsing-2.4.7-9.el9.noarch 1651918797 650026 fcaca142e77bfbfa5b2fbe0feeff3400 installed
+DEBUG util.py:446:  systemtap-sdt-dtrace-5.3-3.0.1.el9.x86_64 1755092458 184231 aaec74389b50194b28ece2e58de6373a installed
+DEBUG util.py:446:  systemtap-sdt-devel-5.3-3.0.1.el9.x86_64 1755092458 187601 08d6101f0e9d7217ba570020bbada42b installed
+DEBUG util.py:446:  perl-Digest-1.19-4.el9.noarch 1641752013 36844 de52b5682a19bee8ad839fb2b1cd9eab installed
+DEBUG util.py:446:  perl-Digest-MD5-2.58-4.el9.x86_64 1641761609 61522 7124460faf64a25f08093067d5f9aa38 installed
+DEBUG util.py:446:  perl-B-0:1.80-483.el9.x86_64 1754686377 504453 c7c61e1b051342ad632823cfa67bff36 installed
+DEBUG util.py:446:  perl-FileHandle-0:2.03-483.el9.noarch 1754686377 10533 5c5de7fba7caf0ca858c6c5ba9d67509 installed
+DEBUG util.py:446:  perl-Data-Dumper-2.174-462.el9.x86_64 1641752749 111869 03396c91a076a476b1c74f12be69087c installed
+DEBUG util.py:446:  perl-libnet-3.13-4.el9.noarch 1641765241 299357 6b3fb8203b2b2a0c664acdb5c9663d9c installed
+DEBUG util.py:446:  perl-AutoLoader-0:5.74-483.el9.noarch 1754686377 22038 93ae2ae56908af03a93d65f914576eff installed
+DEBUG util.py:446:  perl-Class-Struct-0:0.66-483.el9.noarch 1754686377 26954 5dbd73a03ccba4fbfb76a6c60ef836d1 installed
+DEBUG util.py:446:  perl-base-0:2.27-483.el9.noarch 1754686377 13820 ebf08bf6845ace30d05f661db2751eea installed
+DEBUG util.py:446:  perl-URI-5.09-3.el9.noarch 1641789576 216915 6185a5d0f68367edb88c3198d5614e44 installed
+DEBUG util.py:446:  perl-Socket-4:2.031-4.el9.x86_64 1641765045 124969 1fde3d7bfdccda01a8ffce658be99867 installed
+DEBUG util.py:446:  perl-Term-ANSIColor-5.01-461.el9.noarch 1641780870 100303 70d936cb088d2d226ecb2aa16728d6c0 installed
+DEBUG util.py:446:  perl-Time-Local-2:1.300-7.el9.noarch 1641788182 67344 dd505f8b80c7a81cc82d0fe19db46f20 installed
+DEBUG util.py:446:  perl-Mozilla-CA-20200520-6.el9.noarch 1641771904 5866 bcdb350d92d6b874953279ef69d9af87 installed
+DEBUG util.py:446:  perl-POSIX-0:1.94-483.el9.x86_64 1754686377 240020 e19c432049d9ee3583ea2bd9d13d5d63 installed
+DEBUG util.py:446:  perl-SelectSaver-0:1.02-483.el9.noarch 1754686377 3171 81a23b7b374145f01542667b71be7d08 installed
+DEBUG util.py:446:  perl-if-0:0.60.800-483.el9.noarch 1754686377 6875 bac00f1af62bf105e9cd8a9678ec24b2 installed
+DEBUG util.py:446:  perl-mro-0:1.23-483.el9.x86_64 1754686377 43476 662e5ecc92779ddc4988485dd3276f26 installed
+DEBUG util.py:446:  perl-IO-Socket-IP-0.41-5.el9.noarch 1641763533 100240 e354657cafbf0e6754c7152a1d1ac61a installed
+DEBUG util.py:446:  perl-File-stat-0:1.09-483.el9.noarch 1754686377 13950 f7829fd2905dbabe3bdaad6dc27bc1fd installed
+DEBUG util.py:446:  perl-overloading-0:0.02-483.el9.noarch 1754686377 5894 cf220bc384f526c150ad11df39813c20 installed
+DEBUG util.py:446:  perl-subs-0:1.03-483.el9.noarch 1754686377 3061 3bc05097541ad2076c58d9790bb91f7b installed
+DEBUG util.py:446:  perl-File-Path-2.18-4.el9.noarch 1641757578 65333 13a8ae9e880edd98c6068d6efb5c3221 installed
+DEBUG util.py:446:  perl-Pod-Escapes-1:1.07-460.el9.noarch 1641777183 25764 3d28d63ff2a9b03981e7bd7984bda4ad installed
+DEBUG util.py:446:  perl-Term-Cap-1.17-460.el9.noarch 1641780577 29851 554de839af517b011c60df6575661a1c installed
+DEBUG util.py:446:  perl-Text-Tabs+Wrap-2013.0523-460.el9.noarch 1642117999 24828 226d16112df9962842f28a96e38be3e5 installed
+DEBUG util.py:446:  perl-Pod-Usage-4:2.01-4.el9.noarch 1641778062 87186 245eb36dec49ebd9620e005a2b20ba19 installed
+DEBUG util.py:446:  perl-IO-Socket-SSL-2.073-2.el9.noarch 1730375445 616300 9001bd53c4d52fe731507765aa41c892 installed
+DEBUG util.py:446:  perl-Net-SSLeay-1.94-3.el9.x86_64 1754568422 1520289 4324396dd6ade0b600b5f7d24e309ad3 installed
+DEBUG util.py:446:  perl-MIME-Base64-3.16-4.el9.x86_64 1641762221 48137 82360e5d11b232769105fea4944b5a83 installed
+DEBUG util.py:446:  perl-Scalar-List-Utils-4:1.56-462.el9.x86_64 1729881612 143128 f07377dc754d0f0a3a61c90be3235a0b installed
+DEBUG util.py:446:  perl-Text-ParseWords-3.30-460.el9.noarch 1641786416 13101 ba7e3f4e455e22d36186f6fb4c5bf664 installed
+DEBUG util.py:446:  perl-constant-1.33-461.el9.noarch 1641755463 27104 51eff1124ab299701ccb79df7010ebb2 installed
+DEBUG util.py:446:  perl-parent-1:0.238-460.el9.noarch 1641775024 9535 f1a23be8b3f7777de49d3e5325ee0734 installed
+DEBUG util.py:446:  perl-Errno-0:1.30-483.el9.x86_64 1754686377 9538 be9f103a75ab01a57e744a2f56073a11 installed
+DEBUG util.py:446:  perl-Fcntl-0:1.13-483.el9.x86_64 1754686377 30116 c716cc65d5442ec08b6fec273b344f49 installed
+DEBUG util.py:446:  perl-File-Basename-0:2.85-483.el9.noarch 1754686377 15340 58d6a1d63d6cd8b112dfefcd2c53f036 installed
+DEBUG util.py:446:  perl-Getopt-Std-0:1.12-483.el9.noarch 1754686377 12107 7ac173383ced69e9462cea634397e1da installed
+DEBUG util.py:446:  perl-Symbol-0:1.08-483.el9.noarch 1754686377 7847 f5e1301a70168554427f5b3a8776935e installed
+DEBUG util.py:446:  perl-Storable-1:3.21-460.el9.x86_64 1641765905 228524 f3f6072de6481022cd0d42c292b0cbeb installed
+DEBUG util.py:446:  perl-IPC-Open3-0:1.21-483.el9.noarch 1754686377 25047 d00f10a74320f4e3a1601bf09c40376e installed
+DEBUG util.py:446:  perl-IO-0:1.43-483.el9.x86_64 1754686377 163137 91c0b2dc52549b736e7b63f88e59b52f installed
+DEBUG util.py:446:  perl-overload-0:1.31-483.el9.noarch 1754686377 72822 03e50bebf2b1078a2fafae0f68cc7c2f installed
+DEBUG util.py:446:  perl-File-Temp-1:0.231.100-4.el9.noarch 1641759297 166550 157db8373e1fb47615db499099ce4f6d installed
+DEBUG util.py:446:  perl-vars-0:1.05-483.el9.noarch 1754686377 4927 1faa1e368cd9b38e81867cd51cd1ed8d installed
+DEBUG util.py:446:  perl-Pod-Simple-1:3.42-4.el9.noarch 1641778591 577293 55e7dd1a17ea23d5833f674907ac5e93 installed
+DEBUG util.py:446:  perl-Getopt-Long-1:2.52-4.el9.noarch 1641759592 139937 87e3a3e2aaefb3bab299346d88097155 installed
+DEBUG util.py:446:  perl-podlators-1:4.14-460.el9.noarch 1641776617 288742 98be0dad4ff820c9bbd8ccda766a9396 installed
+DEBUG util.py:446:  perl-HTTP-Tiny-0.076-462.el9.noarch 1712759001 150675 48e0322ac4f7cae4177335d691c41b4d installed
+DEBUG util.py:446:  perl-Carp-1.50-460.el9.noarch 1641746676 47889 dbc831bbcdfa814a61bb2f4510cf0a3d installed
+DEBUG util.py:446:  perl-Exporter-5.74-461.el9.noarch 1641846128 55359 4dfaa90c55bcc88f213334dc32f7095e installed
+DEBUG util.py:446:  perl-PathTools-3.78-461.el9.x86_64 1641765335 182534 b14d2442cf4353ef0c087c7bf93e4b64 installed
+DEBUG util.py:446:  perl-DB_File-1.855-4.el9.x86_64 1641757942 194304 81a5ba0e43dc690581c39a14db90cab0 installed
+DEBUG util.py:446:  perl-GDBM_File-0:1.18-483.el9.x86_64 1754686377 32401 60f5db520f22878814b08a418c62bd0a installed
+DEBUG util.py:446:  perl-NDBM_File-0:1.15-483.el9.x86_64 1754686377 29969 09b78359454fbb2e60c5baf4f028d3a3 installed
+DEBUG util.py:446:  perl-ODBM_File-0:1.16-483.el9.x86_64 1754686377 33948 20bfaa42c823ae4bb120123548e375d5 installed
+DEBUG util.py:446:  perl-Encode-4:3.08-462.el9.x86_64 1641673789 10239986 75ea407725fec79a4a2c46da024156bd installed
+DEBUG util.py:446:  perl-libs-4:5.32.1-483.el9.x86_64 1754686377 8953891 34414a5a266f0552699c08bda1894f37 installed
+DEBUG util.py:446:  perl-Pod-Perldoc-3.28.01-461.el9.noarch 1641778339 170960 9535ac07707521807e91a5d0363ec973 installed
+DEBUG util.py:446:  perl-doc-0:5.32.1-483.el9.noarch 1754686377 10387633 d265e59a16e2913e6c8342c5bcd72c9d installed
+DEBUG util.py:446:  perl-interpreter-4:5.32.1-483.el9.x86_64 1754686377 120078 d7d2a0e0efb162933a6f4457811713d6 installed
+DEBUG util.py:446:  perl-File-Find-0:1.37-483.el9.noarch 1754686377 39638 9338130964f46273c1c0311cd88461af installed
+DEBUG util.py:446:  perl-File-Copy-0:2.34-483.el9.noarch 1754686377 21088 5d4e0c67bac34066acafc2f95d178e18 installed
+DEBUG util.py:446:  perl-ExtUtils-Manifest-1:1.73-4.el9.noarch 1641755199 86784 48bcbd693519def6cc4685edc38bf158 installed
+DEBUG util.py:446:  perl-Time-HiRes-4:1.9764-462.el9.x86_64 1641768513 122706 5489feb093a69113f54c08b63f0daa3e installed
+DEBUG util.py:446:  perl-DynaLoader-0:1.47-483.el9.x86_64 1754686377 33065 3bd91f9f889ffbb110a3a3ee3b0aa2b4 installed
+DEBUG util.py:446:  perl-ExtUtils-ParseXS-1:3.40-460.el9.noarch 1641754930 404352 2ce28802de452f299694d7d2e7c7f171 installed
+DEBUG util.py:446:  perl-Compress-Raw-Zlib-2.101-5.el9.x86_64 1641750702 152719 3b2471a5d506c7e6cffd260e28992d25 installed
+DEBUG util.py:446:  perl-threads-1:2.25-460.el9.x86_64 1641773669 114562 1d5eb987e43aac173afd10760df88445 installed
+DEBUG util.py:446:  perl-threads-shared-1.61-460.el9.x86_64 1641768179 82277 8007a958c764b04f7426eeff4b89dd8f installed
+DEBUG util.py:446:  perl-File-Compare-0:1.100.600-483.el9.noarch 1754686377 6696 4a97451858fff5e1ef0e46ed12b77361 installed
+DEBUG util.py:446:  perl-lib-0:0.65-483.el9.x86_64 1754686377 9673 b867d4530e45bedd84a3fa18ee4c26da installed
+DEBUG util.py:446:  perl-Digest-SHA-1:6.02-461.el9.x86_64 1641759159 119680 839a7291967a10ad78d6ee5152f15078 installed
+DEBUG util.py:446:  perl-Module-Load-1:0.36-4.el9.noarch 1641773383 15489 20cef6c85e0df8f8be7087f042afb766 installed
+DEBUG util.py:446:  perl-Perl-OSType-1.010-461.el9.noarch 1641776902 33835 3fe395eab3f6b2c743e53820483e1b98 installed
+DEBUG util.py:446:  perl-Unicode-Normalize-1.27-461.el9.x86_64 1641769701 660606 9db817bf0fa442928cda2d338867d371 installed
+DEBUG util.py:446:  perl-Devel-Peek-0:1.28-483.el9.x86_64 1754686377 45603 abd6b0e6d9e5a808fcf1c96a132f802f installed
+DEBUG util.py:446:  perl-Term-ReadLine-0:1.17-483.el9.noarch 1754686377 18640 8d9df51e996df4ad78b0dc7a509a1944 installed
+DEBUG util.py:446:  perl-Tie-0:4.6-483.el9.noarch 1754686377 37003 615118eb3dc3e1fa46c5ea0e80228980 installed
+DEBUG util.py:446:  perl-locale-0:1.09-483.el9.noarch 1754686377 7339 2c72079deb8561a26d90a85edb24c871 installed
+DEBUG util.py:446:  perl-version-7:0.99.28-4.el9.x86_64 1641769416 132386 c58d003d2c72ec057a4987797a6ea814 installed
+DEBUG util.py:446:  perl-CPAN-Meta-Requirements-2.140-461.el9.noarch 1641748362 70661 fa7e130151ff25681af21b4de37de107 installed
+DEBUG util.py:446:  perl-Module-CoreList-1:5.20240609-1.el9.noarch 1740043632 1181560 e58021e0b7a0ec53ef045be25eb562e3 installed
+DEBUG util.py:446:  perl-Module-Metadata-1.000037-460.el9.noarch 1641772480 69188 4efab28541ba4af03d4987f2ddba8087 installed
+DEBUG util.py:446:  perl-meta-notation-0:5.32.1-483.el9.noarch 1754686377 2117 fc4935feb0f72f20cf3b6da634da3e8a installed
+DEBUG util.py:446:  perl-Pod-Html-0:1.25-483.el9.noarch 1754686377 38419 ad7da509f57f344ec5ea91749af5bd85 installed
+DEBUG util.py:446:  perl-Dumpvalue-0:2.27-483.el9.noarch 1754686377 21185 4b1f7e23aa87c320dc2eef5f905436a2 installed
+DEBUG util.py:446:  perl-TermReadKey-2.38-11.el9.x86_64 1641767027 66298 909207a6c6fc3815c618d07355dbb032 installed
+DEBUG util.py:446:  perl-Net-Ping-2.74-5.el9.noarch 1641774470 137392 bae4ae9f265008ff66c4e3cbae3b9e4e installed
+DEBUG util.py:446:  perl-ExtUtils-Command-2:7.60-3.el9.noarch 1641756616 10109 ed0f29dfb3584389018e17516846ed28 installed
+DEBUG util.py:446:  perl-CPAN-Meta-YAML-0.018-461.el9.noarch 1641748875 51721 0b2b13ed4950f2eb1d601bed2dd00c00 installed
+DEBUG util.py:446:  perl-Compress-Raw-Bzip2-2.101-5.el9.x86_64 1641749910 68660 2289b20ea94195e636415686d9c8773c installed
+DEBUG util.py:446:  perl-IO-Compress-2.102-4.el9.noarch 1641783467 863077 6f7ec1c9f4eedcbadc68493d3d1ed326 installed
+DEBUG util.py:446:  perl-IO-Zlib-1:1.11-4.el9.noarch 1641764101 25517 5658f0e47042764105ebd802237c010e installed
+DEBUG util.py:446:  perl-Devel-PPPort-3.62-4.el9.x86_64 1641758851 860810 c4d7fa10d2d993faae76fa5adc490234 installed
+DEBUG util.py:446:  perl-ExtUtils-MM-Utils-2:7.60-3.el9.noarch 1641756616 3226 9761b9df3da9b5b184c1242a194ddfc3 installed
+DEBUG util.py:446:  perl-Params-Util-1.102-5.el9.x86_64 1641764424 60948 1572686ff7415b912b3aaa3defe209f4 installed
+DEBUG util.py:446:  perl-Sub-Install-0.928-28.el9.noarch 1641780291 35807 46bedbfd84ba67c7a16e5318123cce15 installed
+DEBUG util.py:446:  perl-Text-Balanced-2.04-4.el9.noarch 1641786714 109293 3c50b7653b4c1fd959acd71464d3a2be installed
+DEBUG util.py:446:  perl-Tie-RefHash-1.40-4.el9.noarch 1641787624 35341 87d566f96662e86e2537ffc4c90bb2d7 installed
+DEBUG util.py:446:  perl-AutoSplit-0:5.74-483.el9.noarch 1754686377 24629 5d79ffd0d7124455123222b22c80bc06 installed
+DEBUG util.py:446:  perl-Benchmark-0:1.23-483.el9.noarch 1754686377 38258 ab5066f394d4aad8721eed49912ba9ec installed
+DEBUG util.py:446:  perl-Test-Harness-1:3.42-461.el9.noarch 1641781435 580535 b9bfb52fcc66e0a59065449d8646d1fd installed
+DEBUG util.py:446:  perl-DirHandle-0:1.05-483.el9.noarch 1754686377 4416 5b08e406d59a3fff930ebf267f1eadef installed
+DEBUG util.py:446:  perl-ExtUtils-Constant-0:0.25-483.el9.noarch 1754686377 91792 44bc281af4f469c83484c3f6d0b3c983 installed
+DEBUG util.py:446:  perl-Hash-Util-FieldHash-0:1.20-483.el9.x86_64 1754686377 60773 2a29ab3c1ecdf09099cb1115ae907342 installed
+DEBUG util.py:446:  perl-Hash-Util-0:0.23-483.el9.x86_64 1754686377 56612 70b0922c157afd4c4cc4221f24f7a1c8 installed
+DEBUG util.py:446:  perl-I18N-LangTags-0:0.44-483.el9.noarch 1754686377 87236 5ea875da14512423b311e6035b66676e installed
+DEBUG util.py:446:  perl-Locale-Maketext-1.29-461.el9.noarch 1641769033 174927 7b8e6e867eefaaf224b522a778c93fa1 installed
+DEBUG util.py:446:  perl-Locale-Maketext-Simple-1:0.21-483.el9.noarch 1754686377 14043 c25d159a51433a3940fe21161b959d1f installed
+DEBUG util.py:446:  perl-Params-Check-1:0.38-461.el9.noarch 1641776061 28458 85079557b48e93eace7749a512515bd5 installed
+DEBUG util.py:446:  perl-Module-Load-Conditional-0.74-4.el9.noarch 1641773095 29702 2828c5078f80016db7f28e6e18b0e36f installed
+DEBUG util.py:446:  perl-IPC-Cmd-2:1.04-461.el9.noarch 1641764388 87236 685382490b8c0eb2f966a5b93dfa7a99 installed
+DEBUG util.py:446:  perl-I18N-Langinfo-0:0.19-483.el9.x86_64 1754686377 30559 e5752bdd05336d5a57018ad2a01faf74 installed
+DEBUG util.py:446:  perl-Math-Complex-0:1.59-483.el9.noarch 1754686377 88262 f33eabf426e00f182bd5afb607584651 installed
+DEBUG util.py:446:  perl-Math-BigInt-1:1.9998.18-460.el9.noarch 1641771303 725738 16f3e3325a02b8c7b75f81e4197468d9 installed
+DEBUG util.py:446:  perl-JSON-PP-1:4.06-4.el9.noarch 1641765847 144767 f068bf8810b9321af5eb213d1fb297ee installed
+DEBUG util.py:446:  perl-CPAN-Meta-2.150010-460.el9.noarch 1641749736 610128 2e2352f1e9a6fb550100b9b856f51e24 installed
+DEBUG util.py:446:  perl-Math-BigRat-0.2614-460.el9.noarch 1641769896 105818 47299c8b834324c833f871f8ddd1d1f9 installed
+DEBUG util.py:446:  perl-Opcode-0:1.48-483.el9.x86_64 1754686377 51177 1c1030a9eca4d549c3a6ee8966ff2fb2 installed
+DEBUG util.py:446:  perl-Safe-0:2.41-483.el9.noarch 1754686377 32412 1cc385624f46e187e8e8416460e92a26 installed
+DEBUG util.py:446:  perl-SelfLoader-0:1.26-483.el9.noarch 1754686377 23934 cc3324a0bf5a077e36bb0fc83774ac81 installed
+DEBUG util.py:446:  perl-Sys-Hostname-0:1.23-483.el9.x86_64 1754686377 21129 2b4d4e22b063f33324237398d5c96714 installed
+DEBUG util.py:446:  perl-User-pwent-0:1.03-483.el9.noarch 1754686377 19578 9a14b442e50a83dea147088bc8e3cf53 installed
+DEBUG util.py:446:  perl-autouse-0:1.11-483.el9.noarch 1754686377 6999 008cc0e2953cc3dee3e376a883d07f48 installed
+DEBUG util.py:446:  perl-Devel-SelfStubber-0:1.06-483.el9.noarch 1754686377 7874 cf4201b769723393542da3d0f4bd98f6 installed
+DEBUG util.py:446:  perl-bignum-0.51-460.el9.noarch 1641746380 91800 6d983e6ecdc8e9494ddf2f7735e055db installed
+DEBUG util.py:446:  perl-Math-BigInt-FastCalc-0.500.900-460.el9.x86_64 1641763782 42255 342bb6d9da64cdc00911d63d83b2a90e installed
+DEBUG util.py:446:  perl-Encode-Locale-1.05-21.el9.noarch 1641761788 19783 4bb1b2604b49a20ec0066717510cfa9c installed
+DEBUG util.py:446:  perl-File-Fetch-1.00-4.el9.noarch 1641756950 60401 88a895e659c341f82320c30df348396c installed
+DEBUG util.py:446:  perl-fields-0:2.27-483.el9.noarch 1754686377 13100 5ca6a39c77d9a15351cf6dbc81868287 installed
+DEBUG util.py:446:  perl-Data-OptList-0.110-17.el9.noarch 1641750290 49891 5405799a5044a5546bf02a843147a5d2 installed
+DEBUG util.py:446:  perl-DBM_Filter-0:0.06-483.el9.noarch 1754686377 34920 8503a757b9dfde020e5fe67b3dd331b1 installed
+DEBUG util.py:446:  perl-debugger-0:1.56-483.el9.noarch 1754686377 412709 cd1a591f2c5bf3fd00547708fcbb5f35 installed
+DEBUG util.py:446:  perl-sigtrap-0:1.09-483.el9.noarch 1754686377 12283 26efad9fc5aae394cface210b755eb4f installed
+DEBUG util.py:446:  perl-Module-CoreList-tools-1:5.20240609-1.el9.noarch 1740043632 19264 a7ecf4470af311032c2da46e4381cd7b installed
+DEBUG util.py:446:  perl-experimental-0.022-6.el9.noarch 1641753531 31555 f9acd8ca7bfba8482d0a5a9fb5303a8a installed
+DEBUG util.py:446:  perl-Env-1.04-460.el9.noarch 1641752989 26875 90f30e18e927c4117d23f54f2f5abe2e installed
+DEBUG util.py:446:  perl-Unicode-Collate-1.29-4.el9.x86_64 1641767887 5174622 b0e88d1b4001a795506ed2c0901a2983 installed
+DEBUG util.py:446:  perl-Unicode-UCD-0:0.75-483.el9.noarch 1754686377 210569 b5fea489c544dfdc2ca7a47cac82b946 installed
+DEBUG util.py:446:  perl-Archive-Zip-1.68-6.el9.noarch 1641746091 299088 3968bca9f53a604c7e3750e5838e8e97 installed
+DEBUG util.py:446:  perl-Thread-Queue-3.14-460.el9.noarch 1641790385 29828 0033e462e6a9bb8e169b9172536af378 installed
+DEBUG util.py:446:  perl-Thread-0:3.05-483.el9.noarch 1754686377 13365 fed8a486130ef46d7acd275b6f80001f installed
+DEBUG util.py:446:  perl-Thread-Semaphore-0:2.13-483.el9.noarch 1754686377 11219 00976d37037e5fe318ff9b5e6a978b6c installed
+DEBUG util.py:446:  perl-Digest-SHA1-2.13-34.el9.x86_64 1641928889 107199 fd219217ee6559ad437200ea5a72d863 installed
+DEBUG util.py:446:  perl-Pod-Checker-4:1.74-4.el9.noarch 1641782299 52836 33839a02d36c0eb4c95ce88a8919d43f installed
+DEBUG util.py:446:  kernel-srpm-macros-1.0-14.0.1.el9.noarch 1757927128 21177 dd63a2a1cdad19e3457d482e314351c6 installed
+DEBUG util.py:446:  perl-diagnostics-0:1.37-483.el9.noarch 1754686377 455636 336b757baa6ff3f0c3881bd75315add7 installed
+DEBUG util.py:446:  perl-macros-4:5.32.1-483.el9.noarch 1754686377 5643 f75a7ccdf8f04ebf06901a2cebc8c60c installed
+DEBUG util.py:446:  perl-utils-0:5.32.1-483.el9.noarch 1754686377 103015 8ab6576f33c5ed8985667338159d2bd6 installed
+DEBUG util.py:446:  perl-Algorithm-Diff-1.2010-4.el9.noarch 1641745837 110575 90208827a57b583745101a004e90cf0c installed
+DEBUG util.py:446:  perl-Text-Diff-1.45-13.el9.noarch 1641785475 85715 acc781e9cd11d6386de463702ea750de installed
+DEBUG util.py:446:  perl-CPAN-DistnameInfo-0.12-23.el9.noarch 1641748616 11057 cb39ad3a54d01127ff725b66eadd6516 installed
+DEBUG util.py:446:  perl-Compress-Bzip2-2.28-5.el9.x86_64 1641749001 150420 90db9164bac7f4fb3b9d936e14c79f58 installed
+DEBUG util.py:446:  perl-Compress-Raw-Lzma-2.101-3.el9.x86_64 1641751270 125292 e0dddce6d9024e041d15f0de1559044b installed
+DEBUG util.py:446:  perl-IO-Compress-Lzma-2.101-4.el9.noarch 1641762651 212180 1cc6cdc089758065dfb00ae80ad4073e installed
+DEBUG util.py:446:  perl-Archive-Tar-2.38-6.el9.noarch 1641746971 157654 4a3f27b1f335467da56771ebfa6232dc installed
+DEBUG util.py:446:  perl-Config-Perl-V-0.33-4.el9.noarch 1641763808 25255 237fb38e2a62b2ee8c7d389b05517aa9 installed
+DEBUG util.py:446:  perl-Devel-Size-0.83-10.el9.x86_64 1641758560 47445 7e6d3c81e663d5b601da2d3e948802a3 installed
+DEBUG util.py:446:  perl-File-Which-1.23-10.el9.noarch 1641758440 30250 9f4505c8918584bd0be9f482e947403f installed
+DEBUG util.py:446:  perl-File-HomeDir-1.006-4.el9.noarch 1641757311 124471 3750a814e111cad2301d695826292ead installed
+DEBUG util.py:446:  perl-IPC-SysV-2.09-4.el9.x86_64 1641761323 77046 0c2d452b516c622aaafc1a43326aed7a installed
+DEBUG util.py:446:  perl-IPC-System-Simple-1.30-6.el9.noarch 1641765005 73654 bbe64e0f8d1cbc533088e63ef6873080 installed
+DEBUG util.py:446:  perl-autodie-2.34-4.el9.noarch 1641747548 220087 2ab939998ea0bcbcf32b7ae7d0da80a4 installed
+DEBUG util.py:446:  perl-Importer-0.026-4.el9.noarch 1641761025 94972 659a0fb6fd8aa8c80839069c5c01999e installed
+DEBUG util.py:446:  perl-MIME-Charset-1.012.2-15.el9.noarch 1641865024 106567 f34f11fc6553c5bc4e971dc1f71cf9d0 installed
+DEBUG util.py:446:  perl-Unicode-LineBreak-2019.001-11.el9.x86_64 1641768820 298571 9ec879128e20ca15a413fda57129730a installed
+DEBUG util.py:446:  perl-MRO-Compat-0.13-15.el9.noarch 1641777757 25912 e8d188acb5d1cb6c0d5447e5fd7676c6 installed
+DEBUG util.py:446:  perl-Object-HashBase-0.009-7.el9.noarch 1641782012 45124 761af75101979dcd0dff12b5f52c483d installed
+DEBUG util.py:446:  perl-Package-Generator-1.106-23.el9.noarch 1641781730 31036 c72a4452d4904055477712dead4dfa6f installed
+DEBUG util.py:446:  perl-Sub-Exporter-0.987-27.el9.noarch 1641779746 142832 044dbf03f0d2bad03fe9a6493085bf19 installed
+DEBUG util.py:446:  perl-Data-Section-0.200007-14.el9.noarch 1641751172 43062 8a66ecc949f6cbd5080036a4ab37c2de installed
+DEBUG util.py:446:  perl-PerlIO-via-QuotedPrint-0.09-4.el9.noarch 1641782586 31112 681c98e8546ae344eecd9aa0e2c67faf installed
+DEBUG util.py:446:  perl-Sys-Syslog-0.36-461.el9.x86_64 1641766214 101810 08bd3bd8e2d6aaaa7ce6e8dd6eaee69b installed
+DEBUG util.py:446:  perl-Term-Size-Perl-0.031-12.el9.x86_64 1641766769 26459 c480fc30b23fa77019e833411df4292b installed
+DEBUG util.py:446:  perl-Term-Size-Any-0.002-35.el9.noarch 1641780036 8378 ca3dcdd244c5b530c73bd8d67dbd454e installed
+DEBUG util.py:446:  perl-Term-Table-0.015-8.el9.noarch 1641781152 61020 7add58e3c66a1b666c5956c084033183 installed
+DEBUG util.py:446:  perl-Test-Simple-3:1.302183-4.el9.noarch 1641786092 1387275 38903dac035ad18cbfcb07966b51bdde installed
+DEBUG util.py:446:  perl-Text-Glob-0.11-15.el9.noarch 1641787049 8826 788067d6b7ef69eb475d6da8784adab6 installed
+DEBUG util.py:446:  perl-Text-Template-1.59-5.el9.noarch 1641785793 115575 74ddebc734bda24f5fa462eb9c8dfa4f installed
+DEBUG util.py:446:  perl-Software-License-0.103014-12.el9.noarch 1641778877 465010 3c31f2188f4e5448d1cd253255d81fcb installed
+DEBUG util.py:446:  perl-local-lib-2.000024-13.el9.noarch 1641768778 120229 bd25871052350857f77732522ba8a811 installed
+DEBUG util.py:446:  perl-perlfaq-5.20210520-1.el9.noarch 1740039846 745690 48c7abbc7269e7fdc6616dbdad6ed681 installed
+DEBUG util.py:446:  perl-Attribute-Handlers-0:1.01-483.el9.noarch 1754686377 39367 df63afe73c8c0632c77801773cb1f35b installed
+DEBUG util.py:446:  perl-Config-Extensions-0:0.03-483.el9.noarch 1754686377 3660 075f53fa7577a7ba3280c54d61a671b2 installed
+DEBUG util.py:446:  perl-English-0:1.11-483.el9.noarch 1754686377 7319 02601bc998bcc54d0712827bc779a01c installed
+DEBUG util.py:446:  perl-File-DosGlob-0:1.12-483.el9.x86_64 1754686377 26208 83f0d59d641a5db4ba28951afeb5a5b9 installed
+DEBUG util.py:446:  perl-FileCache-0:1.10-483.el9.noarch 1754686377 8583 4f75e7d9ff8ec2ddbd6666251e31391b installed
+DEBUG util.py:446:  perl-FindBin-0:1.51-483.el9.noarch 1754686377 7441 9f865b579bd37b578b270bd3a3c481a6 installed
+DEBUG util.py:446:  perl-I18N-Collate-0:1.02-483.el9.noarch 1754686377 8191 36cc8e346457801559253dd24033287d installed
+DEBUG util.py:446:  perl-Memoize-0:1.03-483.el9.noarch 1754686377 83498 2afae35dbd8dd640f6ae4dce573ba803 installed
+DEBUG util.py:446:  perl-Module-Loaded-1:0.08-483.el9.noarch 1754686377 6044 d6278f2932623ff0a52616e292ea3512 installed
+DEBUG util.py:446:  perl-NEXT-0:0.67-483.el9.noarch 1754686377 25121 19594f473cca3b2f241592b928067b86 installed
+DEBUG util.py:446:  perl-Net-0:1.02-483.el9.noarch 1754686377 27147 2abd52c681e96be1fcec9f0bbb9f26f9 installed
+DEBUG util.py:446:  perl-Pod-Functions-0:1.13-483.el9.noarch 1754686377 14366 1a02d752c4f13bd30a3164e0cec3e612 installed
+DEBUG util.py:446:  perl-Search-Dict-0:1.07-483.el9.noarch 1754686377 5721 c6df3e35b570cfcbb35454d9a7a7c1aa installed
+DEBUG util.py:446:  perl-Term-Complete-0:1.403-483.el9.noarch 1754686377 6819 cc5b0d780ff12e68249b302219ec144c installed
+DEBUG util.py:446:  perl-Test-0:1.31-483.el9.noarch 1754686377 38819 ee6140869969eb13c72c2a1024702281 installed
+DEBUG util.py:446:  perl-Text-Abbrev-0:1.02-483.el9.noarch 1754686377 4085 4dd3e4786af803b0019ccca8d627e468 installed
+DEBUG util.py:446:  perl-Tie-File-0:1.06-483.el9.noarch 1754686377 88529 f9659aab695dcfceb1c71222c5e3c1a0 installed
+DEBUG util.py:446:  perl-Tie-Memoize-0:1.1-483.el9.noarch 1754686377 7302 14a8e1aff1947052165b06329143127f installed
+DEBUG util.py:446:  perl-Time-0:1.03-483.el9.noarch 1754686377 13051 29b8559ba00ea6e8322b0f406fadcbba installed
+DEBUG util.py:446:  perl-Time-Piece-0:1.3401-483.el9.x86_64 1754686377 70425 7285f9e912abd343fab704c1b23ce2f2 installed
+DEBUG util.py:446:  perl-blib-0:1.07-483.el9.noarch 1754686377 4236 19a530cabb8cfffb3d8b243b621aac96 installed
+DEBUG util.py:446:  perl-deprecate-0:0.04-483.el9.noarch 1754686377 7661 78772d1bd066c415199bf05267e4af0c installed
+DEBUG util.py:446:  perl-encoding-warnings-0:0.13-483.el9.noarch 1754686377 11210 806eb7bcf7ebb3f4949035310393952f installed
+DEBUG util.py:446:  perl-filetest-0:1.03-483.el9.noarch 1754686377 7538 4d26a8fd1fd440404c6554672b52ba9a installed
+DEBUG util.py:446:  perl-less-0:0.03-483.el9.noarch 1754686377 5968 4ee80025b65ae6a201a8000442c7f5db installed
+DEBUG util.py:446:  perl-ph-0:5.32.1-483.el9.x86_64 1754686377 274136 b63cc4d5497b990cb126d8d6754ef38d installed
+DEBUG util.py:446:  perl-sort-0:2.04-483.el9.noarch 1754686377 6851 9f6f2d82129944d77f5e19ad5e4de9ca installed
+DEBUG util.py:446:  perl-vmsish-0:1.04-483.el9.noarch 1754686377 7692 5da54a2ec66b12463472a4fc026d84d8 installed
+DEBUG util.py:446:  openssl-1:3.5.1-3.0.1.el9.x86_64 1755178623 2263616 ddd66239bdcf7333c8c37e7d8962d144 installed
+DEBUG util.py:446:  libpwquality-1.4.4-8.el9.x86_64 1641814268 416376 bd4bf565cd835e894fcd6bc58fe7a871 installed
+DEBUG util.py:446:  pam-1.5.1-26.0.1.el9_6.x86_64 1756922884 1907771 5102740633c672d3e9ab187452f46ff3 installed
+DEBUG util.py:446:  util-linux-2.37.4-21.0.1.el9.x86_64 1741607853 11147286 b4785a254e2533122d5900d127534903 installed
+DEBUG util.py:446:  libevent-2.1.12-8.el9_4.x86_64 1725367134 928082 92224b0267eca3225d1e7a81b79344ad installed
+DEBUG util.py:446:  openldap-2.6.8-4.el9.x86_64 1741461437 1087281 28b1999b537701256faac6ea25957d32 installed
+DEBUG util.py:446:  libcurl-7.76.1-34.el9.x86_64 1759502262 667502 6f5c7fc301c57d343f2a973751556499 installed
+DEBUG util.py:446:  gnupg2-2.3.3-4.el9.x86_64 1697282121 9227517 ea668cd0ad02b3a67ada7a470bb8a0e9 installed
+DEBUG util.py:446:  gpgme-1.15.1-6.el9.x86_64 1651925592 576041 7de8151e6d21b685daba70eb70557ae8 installed
+DEBUG util.py:446:  python3-gpg-1.15.1-6.el9.x86_64 1651925592 1404181 b1ca5199a5b2eb690c43186de2297d53 installed
+DEBUG util.py:446:  librepo-1.14.5-3.el9.x86_64 1754627031 224508 8553fbb99cd06ef7649ab1cf7854c3a7 installed
+DEBUG util.py:446:  perl-Module-Signature-0.88-1.el9.noarch 1651818742 139139 454a6dc6e1c8e25404d433d8928c6435 installed
+DEBUG util.py:446:  tpm2-tss-3.2.3-1.el9.x86_64 1729908871 2232016 8787b73de8f22ea92f205e4e7400007c installed
+DEBUG util.py:446:  ima-evm-utils-1.6.2-2.el9.x86_64 1757699890 169168 71fe7f5a8566e4b71502993a53251a68 installed
+DEBUG util.py:446:  curl-7.76.1-34.el9.x86_64 1759502262 684513 ed8ddeaaf82ca6861b4cf35c28166cef installed
+DEBUG util.py:446:  rpm-4.16.1.3-39.el9.x86_64 1759506960 2750478 3c985e53cbf33ebcdc7db671736c35c1 installed
+DEBUG util.py:446:  rpm-libs-4.16.1.3-39.el9.x86_64 1759506960 773068 3caf698276c14ce400ded6ce52fd8fb9 installed
+DEBUG util.py:446:  libmodulemd-2.13.0-2.el9.x86_64 1641679135 733919 5fc8c1fa1ea6ea3eec5bdd729a9318b2 installed
+DEBUG util.py:446:  libsolv-0.7.24-3.el9.x86_64 1729883927 917066 463075002f6d98666fc21be28e5bcedd installed
+DEBUG util.py:446:  libdnf-0.69.0-16.0.1.el9.x86_64 1755098287 2151309 333e7965ed6376423052d58d559e920c installed
+DEBUG util.py:446:  python3-libdnf-0.69.0-16.0.1.el9.x86_64 1755098287 3799852 e47945be38211fb0dcf923e2346cfa63 installed
+DEBUG util.py:446:  python3-hawkey-0.69.0-16.0.1.el9.x86_64 1755098287 309000 1642add37868b26772141568bfbe1ceb installed
+DEBUG util.py:446:  rpm-plugin-systemd-inhibit-4.16.1.3-39.el9.x86_64 1759506960 16111 f9342e0fe0f718dd6bff3d1e71832c8b installed
+DEBUG util.py:446:  rpm-sign-libs-4.16.1.3-39.el9.x86_64 1759506960 27636 fbd2f906ddb0e80efd9fb8befa1fcd9a installed
+DEBUG util.py:446:  lua-srpm-macros-1-6.el9.noarch 1641671302 1314 2f4e2606bf8b2fc846dbacea962a6963 installed
+DEBUG util.py:446:  efi-srpm-macros-6-4.0.1.el9.noarch 1757927146 41044 a5cf5f8fd461c27e1559ea918d58983b installed
+DEBUG util.py:446:  kmod-libs-28-11.0.1.el9.x86_64 1757927405 133910 c6486e346b9e23cb998e3c6bf3a4d456 installed
+DEBUG util.py:446:  dbus-1:1.12.20-8.0.1.el9.x86_64 1698156934 0 73089a6df26543e0117f600e518ae95c installed
+DEBUG util.py:446:  systemd-pam-252-55.0.1.el9.x86_64 1758023887 526635 dcbcabd48a41a1559d36ba495e03529f installed
+DEBUG util.py:446:  systemd-252-55.0.1.el9.x86_64 1758023887 12908468 8d099c45b05e2603990bcb7599e599ee installed
+DEBUG util.py:446:  dbus-common-1:1.12.20-8.0.1.el9.noarch 1698156934 11394 9678f9012cadbcc7430e40921e4be9c8 installed
+DEBUG util.py:446:  dbus-broker-28-7.el9.x86_64 1665524649 393994 33c4e3781bf5b6db7b33841513e81fac installed
+DEBUG util.py:446:  elfutils-default-yama-scope-0.193-1.el9.noarch 1754477574 1810 c87b9c6578ffc8ffd73811c38e7c9d47 installed
+DEBUG util.py:446:  elfutils-libs-0.193-1.el9.x86_64 1754477574 751669 f59e08747b921bcb5eecbf266b87f4f0 installed
+DEBUG util.py:446:  elfutils-debuginfod-client-0.193-1.el9.x86_64 1754477574 81130 8e9deffbbe77ff3976ecd020fbe5d858 installed
+DEBUG util.py:446:  binutils-gold-2.35.2-67.0.1.el9.x86_64 1759428536 2129059 b0a242b2539884ff5aec935bb5f50ded installed
+DEBUG util.py:446:  binutils-2.35.2-67.0.1.el9.x86_64 1759428536 25393871 bcb0b8e24303a7561795a70eacf55ca0 installed
+DEBUG util.py:446:  gcc-11.5.0-11.0.1.el9.x86_64 1757398589 90047881 3edb65a34185781ac109f47532d59f7e installed
+DEBUG util.py:446:  perl-Filter-2:1.60-4.el9.x86_64 1641760436 171865 87dbb0f4b749d80a7a50ce44f7bc9e1d installed
+DEBUG util.py:446:  elfutils-0.193-1.el9.x86_64 1754477574 3421590 ad3d8596a49ffb1d63ee6f11d2e52f49 installed
+DEBUG util.py:446:  perl-encoding-4:3.00-462.el9.x86_64 1641673789 148918 7e42eb0fe98cf86b33b8cea2215e10ab installed
+DEBUG util.py:446:  gcc-c++-11.5.0-11.0.1.el9.x86_64 1757398589 33884299 a40c98f4529d34239238d423b2c37742 installed
+DEBUG util.py:446:  gdb-minimal-16.3-2.0.1.el9.x86_64 1754476528 15226257 f7bf0e6a113c497d2b2dde43626648a4 installed
+DEBUG util.py:446:  rpm-build-libs-4.16.1.3-39.el9.x86_64 1759506960 198438 a8e98f42b5f3169286d7eb17b1780542 installed
+DEBUG util.py:446:  python3-rpm-4.16.1.3-39.el9.x86_64 1759506960 197630 e6db3b3038cff8bd1d20beebb69d1410 installed
+DEBUG util.py:446:  python3-dnf-4.14.0-31.0.1.el9.noarch 1755082377 1978273 5807c967729199a7884f21219f6596ac installed
+DEBUG util.py:446:  debugedit-5.0-11.el9.x86_64 1754687354 194614 1be879e5a0efbde380d7a184e81f5da4 installed
+DEBUG util.py:446:  perl-open-0:1.12-483.el9.noarch 1754686377 12457 024f6f1dc033a329830c16dfbb626675 installed
+DEBUG util.py:446:  perl-Filter-Simple-0.96-460.el9.noarch 1641758722 52142 63a7644ffcc082195efc443c7007c04d installed
+DEBUG util.py:446:  annobin-12.98-1.el9.x86_64 1757611137 1225058 53e47f30878ea196f09b46fb31500688 installed
+DEBUG util.py:446:  gcc-plugin-annobin-11.5.0-11.0.1.el9.x86_64 1757398589 57762 b58703680e4ebf0a4ad743cf8d3deb08 installed
+DEBUG util.py:446:  fonts-srpm-macros-1:2.0.5-7.el9.1.noarch 1651793525 56503 6677e6f0ea3865419f166adc8178ae80 installed
+DEBUG util.py:446:  python-srpm-macros-3.9-54.el9.noarch 1729924500 37605 52c599277272b37c70a59626e15de941 installed
+DEBUG util.py:446:  go-srpm-macros-3.6.0-11.el9.noarch 1754533576 62484 8a90b0a920dd87f6028bb89a247a19d1 installed
+DEBUG util.py:446:  redhat-rpm-config-210-1.0.1.el9.noarch 1755092310 189530 a0ed275a0ed7f3c3f31441f24bcb7aa0 installed
+DEBUG util.py:446:  rpm-build-4.16.1.3-39.el9.x86_64 1759506960 150073 3e6ee1eab4a0cd0266b778ef5062912f installed
+DEBUG util.py:446:  pyproject-srpm-macros-1.16.2-1.el9.noarch 1740054685 1952 f3d68b53f5ee52f2557cc3b2ae0d6ff0 installed
+DEBUG util.py:446:  perl-ExtUtils-Install-2.20-4.el9.noarch 1641755783 88180 559c76dd0efbea075ab0de6978631efc installed
+DEBUG util.py:446:  perl-devel-4:5.32.1-483.el9.x86_64 1754686377 7699758 4977615a247640345cf7bf651a259a4b installed
+DEBUG util.py:446:  perl-ExtUtils-MakeMaker-2:7.60-3.el9.noarch 1641756616 756013 5a16e545043bf13663344a6c9d9dae0f installed
+DEBUG util.py:446:  perl-ExtUtils-CBuilder-1:0.280236-4.el9.noarch 1641753844 98754 f5ff4eb7f3c67fe05be00ea4ba611527 installed
+DEBUG util.py:446:  perl-ExtUtils-Embed-0:1.35-483.el9.noarch 1754686377 16861 d7acf50f5532045ff5b55c3f63aae93e installed
+DEBUG util.py:446:  perl-ExtUtils-Miniperl-0:1.09-483.el9.noarch 1754686377 9994 137c83a67db11f74bfe4ca5cca59e6ae installed
+DEBUG util.py:446:  perl-libnetcfg-4:5.32.1-483.el9.noarch 1754686377 18264 93189e2aa28dd23e7041b282975e0abc installed
+DEBUG util.py:446:  perl-Encode-devel-4:3.08-462.el9.x86_64 1641673789 102148 2f5059171c57e0d508a27535c5a3a0c7 installed
+DEBUG util.py:446:  perl-inc-latest-2:0.500-20.el9.noarch 1641768503 35853 a234a684b0992c2e6dec2019eb68ee88 installed
+DEBUG util.py:446:  perl-Module-Build-2:0.42.31-9.el9.noarch 1641772175 668479 69d5eec9433e8cd9365e5d3992a6a89c installed
+DEBUG util.py:446:  perl-CPAN-2.29-5.el9_6.noarch 1747424819 1970465 c3552af9c4907006e2f9e241fc603bc1 installed
+DEBUG util.py:446:  perl-4:5.32.1-483.el9.x86_64 1754686377 0 a23dce2b44bfa307b5f73ba913a597cb installed
+DEBUG util.py:446:  buildsys-build-0.7-1.0.1.el9.noarch 1638299607 0 698276f3fd3e9615257b89f25e14e31c installed
+DEBUG util.py:446:  dnf-4.14.0-31.0.1.el9.noarch 1755082377 2425592 981527b62a8e43226969ef98ca391056 installed
+DEBUG util.py:446:  nspr-4.36.0-4.el9_4.x86_64 1757378620 320992 4b0693e20505d557aac5b57c409d4838 installed
+DEBUG util.py:446:  nss-util-3.112.0-4.el9_4.x86_64 1757378620 238040 c665a11391a0df725602b66be07c46e5 installed
+DEBUG util.py:446:  nss-softokn-freebl-3.112.0-4.el9_4.x86_64 1757378620 1116670 af6fbf0b4928e8e75ecc2c07161d4bd7 installed
+DEBUG util.py:446:  nss-softokn-3.112.0-4.el9_4.x86_64 1757378620 1351027 5f8b9722a4f67dddde0f7b4a82ddd2a9 installed
+DEBUG util.py:446:  openssh-8.7p1-46.0.2.el9.x86_64 1755166670 1991740 2e6a37c36afe2455bbceaa73cb1b24b4 installed
+DEBUG util.py:446:  less-590-6.el9.x86_64 1754640834 364648 bbfec6b49fee5a0ada04c3f28f48f4c8 installed
+DEBUG util.py:446:  emacs-filesystem-1:27.2-18.el9.noarch 1754623837 0 1563ba298c1071a0a10df11c41b91dfd installed
+DEBUG util.py:446:  crypto-policies-scripts-20250905-1.git377cc42.el9_7.noarch 1759515480 271982 d0accf117a9fca67c322a63d5313209f installed
+DEBUG util.py:446:  nss-3.112.0-4.el9_4.x86_64 1757378620 1980927 8346ee9b90ba63d08fc9c2ac75ce00b6 installed
+DEBUG util.py:446:  nss-sysinit-3.112.0-4.el9_4.x86_64 1757378620 18178 6bd77d863c582f7d5b8f303562f59d76 installed
+DEBUG util.py:446:  nss-tools-3.112.0-4.el9_4.x86_64 1757378620 1410055 a61f795d2a40024dd770a84962093f46 installed
+DEBUG util.py:446:  zlib-devel-1.2.11-40.el9.x86_64 1697248718 141092 b924b675eb84f7fd5cf96e6bcb52ff33 installed
+DEBUG util.py:446:  perl-Error-1:0.17029-7.el9.noarch 1641760168 79692 70471ef87adb516c831a308880bfab48 installed
+DEBUG util.py:446:  libzstd-devel-1.5.5-1.el9.x86_64 1740042086 202817 842c8baf4fad8dff3080b7b925eb2f3b installed
+DEBUG util.py:446:  libcbor-0.7.0-5.el9.x86_64 1641689739 99993 63550487aab65786c9e7c8ba97fcde85 installed
+DEBUG util.py:446:  libfido2-1.13.0-2.el9.x86_64 1712641284 246838 0bfceeae72114df56effe17a16e9d886 installed
+DEBUG util.py:446:  openssh-clients-8.7p1-46.0.2.el9.x86_64 1755166670 2145573 ed1b75157bd5b17da0a4d7cbb9afd48e installed
+DEBUG util.py:446:  git-core-2.47.3-1.el9_6.x86_64 1753113838 23082900 1be5a9e0ca077c9e4a8a8895dc8e015d installed
+DEBUG util.py:446:  git-core-doc-2.47.3-1.el9_6.noarch 1753113838 18206820 db582aaeee387d79190309cd1879f95b installed
+DEBUG util.py:446:  perl-Git-2.47.3-1.el9_6.noarch 1753113838 66605 1d63f34f968143d9ce4464c90be172f1 installed
+DEBUG util.py:446:  git-2.47.3-1.el9_6.x86_64 1753113838 87950 130c5e2a03497b6aa7fb4ea4d7af326d installed
+DEBUG util.py:446:  efivar-libs-38-3.el9.x86_64 1680323081 375306 139fe4e4eb78c289df2a541b947b9169 installed
+DEBUG util.py:446:  pesign-115-6.0.2.el9.x86_64 1695336069 762067 e9c06f79b827a6e2932003c2fb0ebe87 installed
+DEBUG util.py:446:  elfutils-libelf-devel-0.193-1.el9.x86_64 1754477574 51150 3d594583481f6eb1ba8e60d2644b1650 installed
+DEBUG util.py:446:  openssl-devel-1:3.5.1-3.0.1.el9.x86_64 1755178623 5537165 49cc419fd4766c2af630eacdaf8de337 installed
+DEBUG util.py:446:  dos2unix-7.4.2-4.el9.x86_64 1641775611 708151 5b482e0ef465530e74e4286a1328136d installed
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG backend.py:777:  Copying packages to result dir
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  ERROR: not a btrfs filesystem: /var/lib/mock
+DEBUG util.py:444:  ERROR: can't access '/var/lib/mock'
+DEBUG util.py:597:  Child return code was: 1
+DEBUG util.py:912:  Please ignore the error above above about btrfs.
+DEBUG util.py:169:  kill orphans
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
+DEBUG util.py:623:  child environment: None
+DEBUG util.py:541:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/ol9-x86_64-u7-bootstrap-ol9_package.pipeline-41792/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:597:  Child return code was: 0
