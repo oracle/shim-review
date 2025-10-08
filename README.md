@@ -141,8 +141,8 @@ Hint: If you attach all the patches and modifications that are being used to you
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
 Source RPM provided in this review branch as part of https://github.com/oracle/shim-review.git project :
-shim-unsigned-x64-16.1-1.0.2.el9.src.rpm
-shim-unsigned-aarch64-16.1-2.0.2.el9.src.rpm
+shim-unsigned-x64-16.1-1.0.2.el10.src.rpm
+shim-unsigned-aarch64-16.1-2.0.2.el10.src.rpm
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -206,17 +206,17 @@ Downstream RHEL/Fedora/Debian/Canonical like implementation
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-The signed bootloaders are derived from GRUB2 2.06 with all of the relevant patches except CVE-2023-4692 and CVE-2023-4693, as we are not including NTFS modules into Oracle signed grub EFI images.
+The signed bootloaders are derived from GRUB2 2.12 with all of the relevant patches except CVE-2023-4692 and CVE-2023-4693, as we are not including NTFS modules into Oracle signed grub EFI images.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-It is `grub,3` in the latest public released Oracle Linux 9.6 GRUB2 errata version 2.06-104.0.1.
+It is `grub,3` in the latest public released Oracle Linux 10.1 GRUB2 errata version 2.12-15.0.1.
 Because we are not building NTFS modules ( which are affected by last CVE ) into Oracle signed grub EFI binary.
 
-In the upcoming Oracle Linux 9.7 release GRUB2 will be updated to newer version with recent security fixes, SBAT entry will be bumped to `grub,5`.
+In the upcoming Oracle Linux 10.1 release GRUB2 will be updated to newer version with recent security fixes, SBAT entry will be bumped to `grub,5`.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -292,7 +292,7 @@ x86_64: Dockerfile
 aarch64: Dockerfile_aarch64
 
 ```
-$ podman build --security-opt=seccomp=unconfined -t ol9_shim16.1:shim-review .
+$ podman build --security-opt=seccomp=unconfined -t ol10_shim16.1:shim-review .
 ```
 
 *******************************************************************************
@@ -314,8 +314,8 @@ Comparing to previous submission, this change updates shim to v16.1, no other ch
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-6c5e6f091665f65ef12df8718d301ed3e9a69333d2b00ff83af45287abae8b42  shimaa64.efi
-06b8e88be43b90e070317eae8e3dac2180ffa1aa3d3028cff5a920e38d958b9b  shimx64.efi
+2efe8ee5fa54e384695f6f3806117b33ecd8b926c261e013d8c2b88d57039081  shimaa64.efi
+5bba07d9074378c6fa5a2bb61c3a9a41da2fea189ab9aed991244416098a02fc  shimx64.efi
 ```
 
 *******************************************************************************
@@ -362,20 +362,20 @@ shim.ol,3,UEFI shim,shim,16.1,mail:secalert_us@oracle.com
 
 
 grub2:
-Output below matches latest public OL9 GRUB2 errata version 2.06-104.0.1, upcoming Oracle Linux 9.7 update will include GRUB2 version with all patches for SBAT v5 level.
+Output below matches latest public OL10 GRUB2 errata version 2.12-15.0.1, upcoming Oracle Linux 10.1 update will include GRUB2 version with all patches for SBAT v5 level.
 
 ```
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,3,Free Software Foundation,grub,2.06,https://www.gnu.org/software/grub/
-grub.rh,2,Red Hat,grub2,2.06-104.0.1.el9_6,mailto:secalert@redhat.com
-grub.ol9,3,Oracle Linux,grub2,2.06,mail:secalert_us@oracle.com
+grub,3,Free Software Foundation,grub,2.12,https://www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.12-15.0.1.el10_0,mailto:secalert@redhat.com
+grub.ol10,3,Oracle Linux,grub2,2.12,mail:secalert_us@oracle.com
 ```
 
 fwupd:
 ```
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
-fwupd-efi.ol,1,Oracle Linux,fwupd,1.9.26,mail:secalert_us@oracle.com
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.6,https://github.com/fwupd/fwupd-efi
+fwupd-efi.fedora,1,The Fedora Project,fwupd-efi,1.6-3.el10,https://src.fedoraproject.org/rpms/fwupd-efi
 ```
 
 *******************************************************************************
@@ -409,7 +409,7 @@ No, Oracle Linux does not use systemd-boot.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-GRUB2 2.06-104.0.1.el9_6 based on latest available in public RHEL GRUB2 + Oracle customization patches on top
+GRUB2 2.12-15.0.1.el10_0 based on latest available in public RHEL GRUB2 + Oracle customization patches on top
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
@@ -437,8 +437,6 @@ No
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-- 5.14.0 based kernel with lockdown patches
-- 5.15.0 based kernel with lockdown patches
 - 6.12.0 based kernel with lockdown patches
 
 *******************************************************************************
