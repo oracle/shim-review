@@ -1,6 +1,12 @@
 FROM oraclelinux:10
 
 RUN yum -y install wget rpm-build gcc gcc-c++ make yum-utils
+
+
+# Install OL10.1 version of gcc to get reproducible shim build
+COPY gcc_14.3.1-2.1_x86_64/ /gcc_14.3.1-2.1
+RUN dnf update /gcc_14.3.1-2.1/*.rpm
+
 COPY shim-unsigned-x64-16.1-1.0.2.el10.src.rpm /
 RUN rpm -ivh shim-unsigned-x64-16.1-1.0.2.el10.src.rpm 
 RUN yum-builddep -y --enablerepo=ol10_appstream,ol10_baseos_latest /root/rpmbuild/SPECS/shim-unsigned-x64.spec
