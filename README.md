@@ -206,17 +206,16 @@ Downstream RHEL/Fedora/Debian/Canonical like implementation
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-The signed bootloaders are derived from GRUB2 2.06 with all of the relevant patches except CVE-2023-4692 and CVE-2023-4693, as we are not including NTFS modules into Oracle signed grub EFI images.
+The signed bootloaders are derived from GRUB2 2.06 with all SecureBoot CVEs above patched.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-It is `grub,3` in the latest public released Oracle Linux 9.6 GRUB2 errata version 2.06-104.0.1.
-Because we are not building NTFS modules ( which are affected by last CVE ) into Oracle signed grub EFI binary.
+It is `grub,3` in the latest public released Oracle Linux 9 GRUB2 errata version 2.06-104.0.1, this version however addresses all SecureBoot CVE fixes up to SBAT level 5.
 
-In the upcoming Oracle Linux 9.7 release GRUB2 will be updated to newer version with recent security fixes, SBAT entry will be bumped to `grub,5`.
+In the upcoming Oracle Linux 9.7 release GRUB2 will be updated to the newer package version with .sbat metadata 'grub,5'.
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -409,7 +408,7 @@ No, Oracle Linux does not use systemd-boot.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-GRUB2 2.06-104.0.1.el9_6 based on latest available in public RHEL GRUB2 + Oracle customization patches on top
+GRUB2 2.06-104.0.1.el9_6 based on latest available in public CentOS Stream GRUB2 + Oracle customization patches on top
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
